@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica - Dashboard Portofolio Sekolah Cinta Kasih Tzu Chi</title>
+    <meta name="description"
+        content="Website portofolio sekolah dan tugas-tugas Jessica dari Sekolah Cinta Kasih Tzu Chi bertema Biru Galaksi Cerah & Aesthetic.">
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Inter', sans-serif;
+            --font-display: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        /* Bright Radiant Galaxy Blue Background */
+        body {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(circle at 10% 15%, rgba(56, 189, 248, 0.25) 0%, transparent 45%),
+                radial-gradient(circle at 85% 65%, rgba(99, 102, 241, 0.25) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(192, 132, 252, 0.18) 0%, transparent 55%);
+            background-attachment: fixed;
+        }
+
+        /* Twinkling star particle animation */
+        .star-particle {
+            position: absolute;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(56, 189, 248, 0.8);
+            animation: twinkle var(--duration, 3s) infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.4); }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0f172a] text-slate-100 font-sans min-h-screen flex flex-col antialiased overflow-x-hidden relative">
+
+    <!-- Glowing Galaxy Background Particles -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-80">
+        <div class="star-particle w-1.5 h-1.5 top-[10%] left-[15%]" style="--duration: 2.5s"></div>
+        <div class="star-particle w-2 h-2 top-[25%] left-[80%]" style="--duration: 4s"></div>
+        <div class="star-particle w-1.5 h-1.5 top-[65%] left-[10%]" style="--duration: 3s"></div>
+        <div class="star-particle w-2.5 h-2.5 top-[75%] left-[70%]" style="--duration: 5s"></div>
+        <div class="star-particle w-1.5 h-1.5 top-[40%] left-[90%]" style="--duration: 3.5s"></div>
+        <div class="star-particle w-2 h-2 top-[85%] left-[30%]" style="--duration: 4.5s"></div>
+    </div>
+
+    <!-- TOP NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-sky-400/30 shadow-[0_4px_25px_rgba(15,23,42,0.8)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Brand Logo & Name (Left) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 via-blue-500 to-indigo-500 p-0.5 shadow-[0_0_20px_rgba(56,189,248,0.6)] overflow-hidden shrink-0">
+                        <img src="dashboard_photo.jpg" alt="Foto Jessica" class="w-full h-full object-cover rounded-[10px]">
+                    </div>
+                    <div>
+                        <h1 class="font-display font-bold text-lg tracking-tight text-white flex items-center gap-1.5">
+                            <span>Jessica</span>
+                            <span class="text-xs text-sky-400">✨</span>
+                        </h1>
+                        <p class="text-[11px] text-sky-300 font-semibold tracking-wider uppercase">Sekolah Cinta Kasih Tzu Chi</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Horizontal Navigation Menu -->
+                <nav class="hidden md:flex items-center space-x-2">
+                    <a href="index.html" id="nav-dashboard"
+                        class="nav-item px-4 py-2 rounded-xl text-sm font-extrabold text-slate-950 bg-gradient-to-r from-sky-300 via-sky-400 to-blue-400 shadow-[0_0_20px_rgba(56,189,248,0.7)] flex items-center space-x-2 transition-all cursor-pointer scale-[1.02]">
+                        <span>🪐</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="profil.html" id="nav-profil"
+                        class="nav-item px-4 py-2 rounded-xl text-sm font-semibold text-sky-100 hover:text-white hover:bg-sky-500/20 transition-all flex items-center space-x-2 cursor-pointer border border-transparent">
+                        <span>👨‍🚀</span>
+                        <span>Profil</span>
+                    </a>
+                    <a href="informatika.html" target="_blank" rel="noopener noreferrer" id="nav-informatika"
+                        class="nav-item px-4 py-2 rounded-xl text-sm font-semibold text-sky-100 hover:text-white hover:bg-sky-500/20 transition-all flex items-center space-x-2 cursor-pointer border border-transparent">
+                        <span>💻</span>
+                        <span>Informatika</span>
+                    </a>
+                    <a href="bahasa_indonesia.html" target="_blank" rel="noopener noreferrer" id="nav-bahasa_indonesia"
+                        class="nav-item px-4 py-2 rounded-xl text-sm font-semibold text-sky-100 hover:text-white hover:bg-sky-500/20 transition-all flex items-center space-x-2 cursor-pointer border border-transparent">
+                        <span>📚</span>
+                        <span>Bahasa Indonesia</span>
+                    </a>
+                    <a href="jadwal_pelajaran.html" id="nav-jadwal_pelajaran"
+                        class="nav-item px-4 py-2 rounded-xl text-sm font-semibold text-sky-100 hover:text-white hover:bg-sky-500/20 transition-all flex items-center space-x-2 cursor-pointer border border-transparent">
+                        <span>📅</span>
+                        <span>Jadwal Pelajaran</span>
+                    </a>
+                </nav>
+
+                <!-- Social Medias & Mobile Toggle -->
+                <div class="flex items-center space-x-3">
+                    <div class="hidden sm:flex items-center space-x-2 border-l border-sky-400/30 pl-4">
+                        <a href="https://www.instagram.com/jeessiicaj?igsh=MXBrZHpuZTlnNWNjcg==" target="_blank" rel="noopener"
+                            class="p-2 rounded-xl bg-slate-800/80 border border-sky-400/40 text-sky-300 hover:text-white hover:border-sky-300 hover:bg-sky-500/30 transition-all shadow-md flex items-center justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@0720trassh?_r=1&_t=ZS-98Dmln04zuH" target="_blank" rel="noopener"
+                            class="p-2 rounded-xl bg-slate-800/80 border border-sky-400/40 text-sky-300 hover:text-white hover:border-sky-300 hover:bg-sky-500/30 transition-all shadow-md flex items-center justify-center">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.02 1.59 4.23.97 1.21 2.34 2.05 3.84 2.42v3.91c-1.23-.07-2.45-.48-3.49-1.18-1.01-.68-1.81-1.63-2.31-2.75-.02 2.19-.02 4.39-.02 6.58 0 1.22-.22 2.45-.71 3.56-.73 1.63-2.07 2.92-3.71 3.53-1.69.64-3.58.64-5.27.01-1.61-.6-2.92-1.84-3.66-3.41-.75-1.57-.86-3.39-.33-5.04.53-1.66 1.71-3.04 3.26-3.81 1.48-.73 3.19-.88 4.77-.45V9.45c-1.25-.43-2.63-.26-3.75.46-1.1.72-1.8 1.94-1.92 3.27-.12 1.36.42 2.73 1.45 3.61 1 .86 2.39 1.26 3.69 1.07 1.31-.19 2.47-.99 3.06-2.18.42-.85.57-1.81.57-2.76.01-4.22.01-8.44.01-12.66-.02-.02-.02-.02-.02-.04z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-xl bg-slate-800 border border-sky-400/40 text-sky-300 hover:text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path id="menu-icon-path" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation Dropdown -->
+            <div id="nav-menu" class="hidden md:hidden px-2 pb-4 pt-2 border-t border-sky-400/30 space-y-1.5 bg-[#0f172a]">
+                <a href="index.html" class="w-full px-4 py-2.5 rounded-xl text-sm font-bold text-sky-300 bg-sky-500/20 text-left flex items-center space-x-2">
+                    <span>🪐</span><span>Dashboard</span>
+                </a>
+                <a href="profil.html" class="w-full px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:text-white hover:bg-sky-500/20 text-left flex items-center space-x-2">
+                    <span>👨‍🚀</span><span>Profil</span>
+                </a>
+                <a href="informatika.html" target="_blank" rel="noopener" class="w-full px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:text-white hover:bg-sky-500/20 text-left flex items-center space-x-2">
+                    <span>💻</span><span>Informatika</span>
+                </a>
+                <a href="bahasa_indonesia.html" target="_blank" rel="noopener noreferrer" class="w-full px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:text-white hover:bg-sky-500/20 text-left flex items-center space-x-2">
+                    <span>📚</span><span>Bahasa Indonesia</span>
+                </a>
+                <a href="jadwal_pelajaran.html" class="w-full px-4 py-2.5 rounded-xl text-sm font-semibold text-slate-200 hover:text-white hover:bg-sky-500/20 text-left flex items-center space-x-2">
+                    <span>📅</span><span>Jadwal Pelajaran</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="flex-1 min-w-0 bg-[#0f172a]/70 z-10 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto space-y-10">
+
+            <!-- Welcome Banner (Bright Radiant Blue) -->
+            <div class="relative overflow-hidden rounded-3xl border border-sky-400/50 bg-gradient-to-r from-[#1e293b] via-[#1e1b4b] to-[#0c4a6e] p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_10px_35px_rgba(56,189,248,0.25)]">
+                <div class="absolute -top-10 -right-10 w-48 h-48 bg-sky-400/20 rounded-full blur-2xl"></div>
+                <div class="absolute -bottom-10 -left-10 w-48 h-48 bg-blue-500/20 rounded-full blur-2xl"></div>
+
+                <div class="space-y-4 max-w-2xl text-center md:text-left relative z-10">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-sky-400/20 border border-sky-300/50 text-xs text-sky-200 font-bold backdrop-blur-md">
+                        <span class="w-2 h-2 rounded-full bg-sky-300 animate-ping"></span>
+                        <span>🚀 Portofolio Resmi Jessica</span>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-display font-extrabold tracking-tight text-white leading-tight">
+                        Selamat Datang, Saya <span class="bg-gradient-to-r from-sky-300 via-blue-200 to-indigo-200 bg-clip-text text-transparent">Jessica</span>! 🌌
+                    </h2>
+                    <p class="text-slate-200 text-sm md:text-base leading-relaxed font-normal">
+                        Pusat pembelajaran digital dan repositori tugas sekolah saya di <strong class="text-sky-300 font-semibold">Sekolah Cinta Kasih Tzu Chi</strong>. Dibuat dengan antarmuka yang bersih & cerah untuk mengabadikan pencapaian akademik.
+                    </p>
+                    <div class="pt-2 flex flex-wrap justify-center md:justify-start gap-3">
+                        <a href="profil.html"
+                            class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 hover:from-sky-300 hover:to-indigo-400 text-slate-950 font-extrabold text-xs transition-all cursor-pointer shadow-lg shadow-sky-400/30 hover:scale-[1.03]">
+                            👨‍🚀 Lihat Profil Saya
+                        </a>
+                        <a href="informatika.html" target="_blank" rel="noopener"
+                            class="px-5 py-2.5 rounded-xl bg-slate-800/90 border border-sky-400/50 text-sky-200 font-bold text-xs hover:text-white hover:border-sky-300 hover:bg-sky-600/30 transition-all cursor-pointer shadow-md">
+                            💻 Jelajahi Informatika
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dashboard Photo -->
+                <div class="relative shrink-0 z-10">
+                    <div class="w-36 h-36 md:w-44 md:h-44 rounded-full p-1.5 bg-gradient-to-tr from-sky-300 via-blue-400 to-indigo-400 shadow-[0_0_35px_rgba(56,189,248,0.7)] overflow-hidden group hover:scale-105 transition-all duration-500">
+                        <img src="dashboard_photo.jpg" alt="Foto Jessica" class="w-full h-full object-cover rounded-full">
+                    </div>
+                    <span class="absolute -bottom-2 -right-2 bg-slate-900 border border-sky-300 text-xs px-3 py-1 rounded-full text-sky-300 shadow-lg font-bold">
+                        Jessica ✨
+                    </span>
+                </div>
+            </div>
+
+            <!-- Stats Dashboard Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="bg-[#182342]/90 border border-sky-400/40 backdrop-blur-md rounded-2xl p-6 hover:border-sky-300 hover:shadow-[0_0_25px_rgba(56,189,248,0.25)] transition-all shadow-md">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-sky-300 font-bold uppercase tracking-wider">TOTAL MATERI & ARTIKEL</span>
+                        <span class="p-2.5 rounded-xl bg-sky-500/20 text-sky-300 border border-sky-400/40 text-lg">🛰️</span>
+                    </div>
+                    <p class="text-3xl font-display font-extrabold mt-4 text-white">12</p>
+                    <p class="text-[11px] text-slate-300 mt-1 font-medium">Artikel Informatika & Bahasa Indonesia</p>
+                </div>
+
+                <div class="bg-[#182342]/90 border border-emerald-400/40 backdrop-blur-md rounded-2xl p-6 hover:border-emerald-300 hover:shadow-[0_0_25px_rgba(52,211,153,0.25)] transition-all shadow-md">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-emerald-300 font-bold uppercase tracking-wider">STATUS PEMBELAJARAN</span>
+                        <span class="p-2.5 rounded-xl bg-emerald-500/20 text-emerald-300 border border-emerald-400/40 text-lg">🌟</span>
+                    </div>
+                    <p class="text-3xl font-display font-extrabold mt-4 text-white">100%</p>
+                    <p class="text-[11px] text-emerald-300 mt-1 font-semibold">Tingkat Penyelesaian Kurikulum</p>
+                </div>
+
+                <div class="bg-[#182342]/90 border border-amber-400/40 backdrop-blur-md rounded-2xl p-6 hover:border-amber-300 hover:shadow-[0_0_25px_rgba(251,191,36,0.25)] transition-all shadow-md">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs text-amber-300 font-bold uppercase tracking-wider">KELAS AKADEMIK</span>
+                        <span class="p-2.5 rounded-xl bg-amber-500/20 text-amber-300 border border-amber-400/40 text-lg">🏫</span>
+                    </div>
+                    <p class="text-3xl font-display font-extrabold mt-4 text-amber-200">XI.3</p>
+                    <p class="text-[11px] text-slate-300 mt-1 font-medium">SMA Cinta Kasih Tzu Chi</p>
+                </div>
+            </div>
+
+            <!-- Two Column Details -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Quick Modules Overview (Left 2 Columns) -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center justify-between border-b border-sky-400/30 pb-3">
+                        <h3 class="font-display font-bold text-lg text-white flex items-center gap-2">
+                            <span>Modul Pembelajaran Utama</span>
+                        </h3>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <a href="informatika.html" target="_blank" rel="noopener" class="p-5 bg-[#182342]/90 border border-sky-400/40 hover:border-sky-300 backdrop-blur-md rounded-2xl space-y-3 transition-all hover:scale-[1.02] shadow-md group">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-sky-500/20 text-sky-300 border border-sky-400/40">💻 Informatika</span>
+                                <span class="text-xs text-slate-400">6 Artikel</span>
+                            </div>
+                            <h4 class="font-display font-extrabold text-white text-base group-hover:text-sky-300 transition-colors">Portal Google Search & Artikel Informatika</h4>
+                            <p class="text-xs text-slate-200 leading-relaxed">Materi Topologi, Sistem Digital, Kriptografi, HTML, CSS, dan Google Anti Gravity.</p>
+                            <span class="text-xs text-sky-300 font-bold flex items-center gap-1 pt-1">
+                                <span>Buka Halaman</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                            </span>
+                        </a>
+
+                        <a href="bahasa_indonesia.html" class="p-5 bg-[#182342]/90 border border-sky-400/40 hover:border-sky-300 backdrop-blur-md rounded-2xl space-y-3 transition-all hover:scale-[1.02] shadow-md group">
+                            <div class="flex items-center justify-between">
+                                <span class="px-2.5 py-1 rounded-lg text-xs font-extrabold bg-indigo-500/20 text-indigo-300 border border-indigo-400/40">📚 B. Indonesia</span>
+                                <span class="text-xs text-slate-400">6 Materi</span>
+                            </div>
+                            <h4 class="font-display font-extrabold text-white text-base group-hover:text-sky-300 transition-colors">Modul Sastra & Kebahasaan</h4>
+                            <p class="text-xs text-slate-200 leading-relaxed">Materi Teks LHO, Teks Anekdot, Hikayat, Negosiasi, Biografi, dan Puisi.</p>
+                            <span class="text-xs text-sky-300 font-bold flex items-center gap-1 pt-1">
+                                <span>Buka Halaman</span>
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Tzu Chi Wisdom Card (Right 1 Column) -->
+                <div class="space-y-4">
+                    <div class="border-b border-sky-400/30 pb-3">
+                        <h3 class="font-display font-bold text-lg text-white">Mutiara Kebijaksanaan</h3>
+                    </div>
+                    <div class="bg-[#182342]/90 border border-sky-400/40 backdrop-blur-md rounded-2xl p-6 relative overflow-hidden flex flex-col justify-between h-[280px] shadow-lg">
+                        <div class="absolute top-0 right-0 text-[120px] font-serif text-sky-400/10 select-none leading-none -mt-4 -mr-2">“</div>
+                        <div class="space-y-4 relative z-10">
+                            <span class="text-[11px] tracking-wider uppercase font-bold text-sky-300 flex items-center gap-1">
+                                <span>KATA PERENUNGAN MASTER CHENG YEN</span>
+                            </span>
+                            <blockquote class="text-slate-100 text-sm italic leading-relaxed font-medium" id="aphorism-text">
+                                "Menghargai waktu berarti menghargai kehidupan kita sendiri, karena kehidupan dibentuk oleh untaian waktu."
+                            </blockquote>
+                        </div>
+                        <div class="flex items-center justify-between mt-6 relative z-10">
+                            <span class="text-xs text-slate-300 font-medium">Misi Karakter Tzu Chi</span>
+                            <button onclick="nextAphorism()" class="p-2.5 rounded-xl bg-sky-500/20 border border-sky-400/50 text-sky-300 hover:text-white transition-all hover:scale-105 cursor-pointer shadow-md">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER HALAMAN -->
+    <footer class="p-6 border-t border-sky-400/30 bg-[#0f172a] backdrop-blur-md mt-auto">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300 font-medium">
+            <p>&copy; 2026 Jessica • Sekolah Cinta Kasih Tzu Chi</p>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.instagram.com/jeessiicaj?igsh=MXBrZHpuZTlnNWNjcg==" target="_blank" rel="noopener" class="text-sky-300 hover:text-white transition-colors font-semibold">Instagram</a>
+                <span>•</span>
+                <a href="https://www.tiktok.com/@0720trassh?_r=1&_t=ZS-98Dmln04zuH" target="_blank" rel="noopener" class="text-sky-300 hover:text-white transition-colors font-semibold">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const APHORISMS = [
+            "Menghargai waktu berarti menghargai kehidupan kita sendiri, karena kehidupan dibentuk oleh untaian waktu.",
+            "Welas asih tidak akan tumbuh bila kita tidak memiliki hati yang penuh rasa syukur.",
+            "Menolong orang lain sebenarnya adalah menolong diri sendiri, karena kebaikan yang kita lakukan akan kembali kepada kita.",
+            "Lakukan kebaikan kecil setiap hari dengan ketulusan hati, maka kebaikan besar akan tercipta dengan sendirinya.",
+            "Gunakan tutur kata yang baik dan lembut untuk menenangkan hati orang lain yang sedang resah."
+        ];
+        let currentAphorismIndex = 0;
+        function nextAphorism() {
+            currentAphorismIndex = (currentAphorismIndex + 1) % APHORISMS.length;
+            const aphorismText = document.getElementById("aphorism-text");
+            aphorismText.style.opacity = 0;
+            setTimeout(() => {
+                aphorismText.innerText = `"${APHORISMS[currentAphorismIndex]}"`;
+                aphorismText.style.opacity = 1;
+            }, 200);
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+            const navMenu = document.getElementById("nav-menu");
+            const menuIconPath = document.getElementById("menu-icon-path");
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener("click", () => {
+                    navMenu.classList.toggle("hidden");
+                    if (navMenu.classList.contains("hidden")) {
+                        menuIconPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+                    } else {
+                        menuIconPath.setAttribute("d", "M6 18L18 6M6 6l12 12");
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="music-player.js"></script>
+</body>
+
+</html>
