@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Pelajaran Saya Kelas XI.3 - SMA Cinta Kasih Tzu Chi</title>
+    <meta name="description"
+        content="Halaman resmi Jadwal Pelajaran Saya Kelas XI.3 SMA Cinta Kasih Tzu Chi Semester Ganjil TA 2026/2027 lengkap dengan nama guru pengajar dan Kode Guru (KD).">
+    
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- Google Fonts: Inter, Plus Jakarta Sans, & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Inter', sans-serif;
+            --font-display: 'Plus Jakarta Sans', sans-serif;
+            --font-google: 'Outfit', 'Product Sans', sans-serif;
+        }
+
+        /* Galaxy Theme Styling */
+        body {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(circle at 10% 15%, rgba(56, 189, 248, 0.25) 0%, transparent 45%),
+                radial-gradient(circle at 85% 65%, rgba(99, 102, 241, 0.25) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(192, 132, 252, 0.18) 0%, transparent 55%);
+            background-attachment: fixed;
+        }
+
+        .star-particle {
+            position: absolute;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(56, 189, 248, 0.8);
+            animation: twinkle var(--duration, 3s) infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.4); }
+        }
+
+        /* Glassmorphism Cards */
+        .glass-card {
+            background: rgba(24, 35, 66, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(56, 189, 248, 0.3);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.6);
+        }
+
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card-hover:hover {
+            transform: translateY(-3px);
+            border-color: rgba(56, 189, 248, 0.6);
+            box-shadow: 0 15px 35px rgba(56, 189, 248, 0.25);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Print styling optimization */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+            }
+            header, footer, .no-print {
+                display: none !important;
+            }
+            .glass-card {
+                background: #ffffff !important;
+                border: 1px solid #ccc !important;
+                box-shadow: none !important;
+                color: #000 !important;
+            }
+            .text-white, .text-sky-300, .text-sky-200, .text-slate-200 {
+                color: #000000 !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-[#0f172a] text-slate-100 font-sans min-h-screen flex flex-col antialiased overflow-x-hidden relative">
+
+    <!-- Glowing Galaxy Particle Background -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-80 no-print">
+        <div class="star-particle w-1.5 h-1.5 top-[8%] left-[12%]" style="--duration: 2.5s"></div>
+        <div class="star-particle w-2 h-2 top-[22%] left-[82%]" style="--duration: 4s"></div>
+        <div class="star-particle w-1.5 h-1.5 top-[60%] left-[8%]" style="--duration: 3s"></div>
+        <div class="star-particle w-2.5 h-2.5 top-[78%] left-[75%]" style="--duration: 5s"></div>
+        <div class="star-particle w-1.5 h-1.5 top-[38%] left-[92%]" style="--duration: 3.5s"></div>
+        <div class="star-particle w-2 h-2 top-[88%] left-[28%]" style="--duration: 4.5s"></div>
+    </div>
+
+    <!-- TOP NAVIGATION HEADER -->
+    <header class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-sky-400/30 shadow-[0_4px_25px_rgba(15,23,42,0.8)] no-print">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Brand Logo & Name (Left) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 via-blue-500 to-indigo-500 p-0.5 shadow-[0_0_20px_rgba(56,189,248,0.6)] overflow-hidden shrink-0">
+                        <img src="dashboard_photo.jpg" alt="Foto Jessica" class="w-full h-full object-cover rounded-[10px]" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80'">
+                    </div>
+                    <div>
+                        <h1 class="font-display font-bold text-lg tracking-tight text-white flex items-center gap-1.5">
+                            <span>Jessica</span>
+                            <span class="text-xs text-sky-400">✨</span>
+                        </h1>
+                        <p class="text-[11px] text-sky-300 font-semibold tracking-wider uppercase">SMA Cinta Kasih Tzu Chi</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Horizontal Navigation Menu -->
+                <nav class="hidden md:flex items-center space-x-2">
+                    <a href="index.html"
+                        class="px-4 py-2 rounded-xl text-sm font-semibold text-sky-100 hover:text-white hover:bg-sky-500/20 transition-all flex items-center space-x-2 cursor-pointer border border-transparent">
+                        <span>🪐</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="index.html#profil"
+                        class="px-4 py-2 rounded-xl text-sm font-semibold text-sky-100 hover:text-white hover:bg-sky-500/20 transition-all flex items-center space-x-2 cursor-pointer border border-transparent">
+                        <span>👨‍🚀</span>
+                        <span>Profil</span>
+                    </a>
+                    <a href="informatika.html"
+                        class="px-4 py-2 rounded-xl text-sm font-semibold text-sky-100 hover:text-white hover:bg-sky-500/20 transition-all flex items-center space-x-2 cursor-pointer border border-transparent">
+                        <span>💻</span>
+                        <span>Informatika</span>
+                    </a>
+                    <a href="jadwal_pelajaran.html" id="nav-jadwal"
+                        class="px-4 py-2 rounded-xl text-sm font-extrabold text-slate-950 bg-gradient-to-r from-sky-300 via-sky-400 to-blue-400 shadow-[0_0_20px_rgba(56,189,248,0.7)] flex items-center space-x-2 transition-all cursor-pointer scale-[1.02]">
+                        <span>📅</span>
+                        <span>Jadwal Pelajaran XI.3</span>
+                    </a>
+                </nav>
+
+                <!-- Action & Mobile Toggle -->
+                <div class="flex items-center space-x-3">
+                    <button onclick="window.print()" 
+                        class="hidden sm:flex items-center space-x-2 px-3.5 py-1.5 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/50 text-sky-300 hover:text-white text-xs font-bold transition-all shadow-md cursor-pointer">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+                        </svg>
+                        <span>Cetak / PDF</span>
+                    </button>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
+                        class="md:hidden p-2 rounded-xl bg-slate-800 border border-sky-400/40 text-sky-300 hover:text-white focus:outline-none cursor-pointer"
+                        aria-label="Toggle Menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Dropdown Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2 pt-2 border-t border-sky-400/20">
+                <a href="index.html" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-sky-100 hover:bg-sky-500/20">🪐 Dashboard</a>
+                <a href="index.html#profil" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-sky-100 hover:bg-sky-500/20">👨‍🚀 Profil</a>
+                <a href="informatika.html" class="block px-4 py-2.5 rounded-xl text-sm font-semibold text-sky-100 hover:bg-sky-500/20">💻 Informatika</a>
+                <a href="jadwal_pelajaran.html" class="block px-4 py-2.5 rounded-xl text-sm font-bold text-slate-950 bg-gradient-to-r from-sky-300 to-blue-400">📅 Jadwal Pelajaran XI.3</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 z-10">
+
+        <!-- HERO HEADER BANNER -->
+        <section class="glass-card rounded-3xl p-6 sm:p-8 space-y-6 relative overflow-hidden">
+            <div class="absolute -right-16 -top-16 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -left-16 -bottom-16 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-sky-400/30 pb-6">
+                <div class="space-y-2">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-sky-500/20 border border-sky-400/50 text-xs font-bold text-sky-200">
+                        <span>🏫</span>
+                        <span>SMA Cinta Kasih Tzu Chi • Semester Ganjil TA 2026/2027</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold text-white tracking-tight flex flex-wrap items-center gap-3">
+                        <span>Jadwal Pelajaran Saya</span>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-blue-400 to-indigo-300">Kelas XI.3</span>
+                    </h1>
+                    <p class="text-sm sm:text-base text-slate-200 font-medium max-w-3xl">
+                        Tabel jadwal mata pelajaran mingguan lengkap dengan Jam Pelajaran (JP), alokasi waktu, nama guru pengajar, dan Kode Guru (KD) resmi terbaru.
+                    </p>
+                </div>
+
+                <!-- Quick Action Buttons -->
+                <div class="flex flex-wrap items-center gap-3 no-print">
+                    <button onclick="window.print()" 
+                        class="px-4 py-2.5 rounded-xl bg-gradient-to-r from-sky-400 to-blue-500 text-slate-950 font-extrabold text-xs sm:text-sm shadow-[0_0_20px_rgba(56,189,248,0.5)] hover:scale-105 transition-all cursor-pointer flex items-center gap-2">
+                        <span>🖨️</span>
+                        <span>Cetak Jadwal</span>
+                    </button>
+                    <button onclick="scrollToGuruSection()" 
+                        class="px-4 py-2.5 rounded-xl bg-slate-800/90 hover:bg-sky-500/20 border border-sky-400/40 text-sky-200 hover:text-white font-bold text-xs sm:text-sm transition-all cursor-pointer flex items-center gap-2">
+                        <span>👩‍🏫</span>
+                        <span>Daftar Guru & KD</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- KEY STATS & HIGHLIGHTS -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-sky-400/25 flex flex-col justify-between space-y-1">
+                    <span class="text-xs font-semibold text-sky-300 uppercase tracking-wider">Kelas</span>
+                    <span class="text-xl sm:text-2xl font-display font-extrabold text-white">XI.3</span>
+                    <span class="text-[11px] text-slate-400">Jurusan Kurikulum Merdeka</span>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-sky-400/25 flex flex-col justify-between space-y-1">
+                    <span class="text-xs font-semibold text-sky-300 uppercase tracking-wider">Total Guru</span>
+                    <span class="text-xl sm:text-2xl font-display font-extrabold text-sky-300">17 Kode (KD)</span>
+                    <span class="text-[11px] text-slate-400">Pengajar Profesional</span>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-sky-400/25 flex flex-col justify-between space-y-1">
+                    <span class="text-xs font-semibold text-sky-300 uppercase tracking-wider">Hari Belajar</span>
+                    <span class="text-xl sm:text-2xl font-display font-extrabold text-indigo-300">Senin - Jumat</span>
+                    <span class="text-[11px] text-slate-400">5 Hari Kerja</span>
+                </div>
+                <div class="p-4 rounded-2xl bg-slate-900/80 border border-sky-400/25 flex flex-col justify-between space-y-1">
+                    <span class="text-xs font-semibold text-sky-300 uppercase tracking-wider">Wali Kelas</span>
+                    <span class="text-base sm:text-lg font-display font-extrabold text-emerald-300 truncate">Guru Wali XI.3</span>
+                    <span class="text-[11px] text-slate-400">SMA Cinta Kasih Tzu Chi</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERACTIVE SEARCH & DAY FILTER TOOLBAR -->
+        <section class="glass-card rounded-2xl p-5 space-y-4 no-print">
+            <div class="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
+                
+                <!-- Day Filter Buttons -->
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="filterDaySchedule('all')" id="day-btn-all"
+                        class="day-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-gradient-to-r from-sky-400 to-blue-500 text-slate-950 shadow-md cursor-pointer transition-all scale-105">
+                        ✨ Semua Hari
+                    </button>
+                    <button onclick="filterDaySchedule('senin')" id="day-btn-senin"
+                        class="day-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-200 hover:text-white bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 transition-all cursor-pointer">
+                        Senin
+                    </button>
+                    <button onclick="filterDaySchedule('selasa')" id="day-btn-selasa"
+                        class="day-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-200 hover:text-white bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 transition-all cursor-pointer">
+                        Selasa
+                    </button>
+                    <button onclick="filterDaySchedule('rabu')" id="day-btn-rabu"
+                        class="day-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-200 hover:text-white bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 transition-all cursor-pointer">
+                        Rabu
+                    </button>
+                    <button onclick="filterDaySchedule('kamis')" id="day-btn-kamis"
+                        class="day-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-200 hover:text-white bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 transition-all cursor-pointer">
+                        Kamis
+                    </button>
+                    <button onclick="filterDaySchedule('jumat')" id="day-btn-jumat"
+                        class="day-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-200 hover:text-white bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 transition-all cursor-pointer">
+                        Jumat
+                    </button>
+                </div>
+
+                <!-- Live Search Box -->
+                <div class="relative min-w-[260px]">
+                    <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-sky-400">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </div>
+                    <input type="text" id="schedule-search" oninput="searchSchedule()"
+                        placeholder="Cari Mapel, Nama Guru, atau Kode KD..."
+                        class="w-full pl-10 pr-4 py-2 rounded-xl bg-slate-900/90 border border-sky-400/40 text-xs sm:text-sm text-white placeholder-slate-400 focus:outline-none focus:border-sky-300 focus:ring-2 focus:ring-sky-400/30 transition-all">
+                </div>
+            </div>
+        </section>
+
+        <!-- SCHEDULE TABLES SECTION -->
+        <section class="space-y-6">
+
+            <!-- SENIN -->
+            <div id="schedule-card-senin" class="schedule-day-card glass-card rounded-2xl p-5 md:p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-sky-400/30 pb-3">
+                    <h2 class="font-display font-extrabold text-xl text-white flex items-center gap-2">
+                        <span class="p-2 rounded-xl bg-sky-500/20 text-sky-300 border border-sky-400/40 text-sm">🗓️</span>
+                        <span>SENIN</span>
+                    </h2>
+                    <span class="text-xs text-sky-300 font-semibold bg-sky-950/80 px-3 py-1 rounded-full border border-sky-400/30">06.30 - 14.40 WIB</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-slate-900/90 text-sky-300 uppercase tracking-wider font-bold border-b border-sky-400/30">
+                                <th class="py-3 px-4 rounded-l-xl w-16 text-center">JP</th>
+                                <th class="py-3 px-4 w-36">Waktu</th>
+                                <th class="py-3 px-4">Mata Pelajaran</th>
+                                <th class="py-3 px-4 w-28 text-center">KD Guru</th>
+                                <th class="py-3 px-4 rounded-r-xl w-48">Nama Guru Pengajar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-sky-400/10 text-slate-200">
+                            <tr class="hover:bg-sky-500/10 transition-colors bg-sky-500/5">
+                                <td class="py-3 px-4 text-center font-semibold text-slate-400">-</td>
+                                <td class="py-3 px-4 font-mono font-medium text-sky-300">06.30 - 07.30</td>
+                                <td class="py-3 px-4 font-bold text-sky-200">Upacara / Pendampingan / Info Day</td>
+                                <td class="py-3 px-4 text-center font-mono text-slate-400">-</td>
+                                <td class="py-3 px-4 font-medium text-slate-300">Guru Wali Kelas XI.3</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">1</td>
+                                <td class="py-3 px-4 font-mono">07.30 - 08.15</td>
+                                <td class="py-3 px-4 font-semibold text-white">Kimia</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 6</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Feby Urmasari</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">2</td>
+                                <td class="py-3 px-4 font-mono">08.15 - 09.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Kimia</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 6</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Feby Urmasari</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">☕</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">09.00 - 09.30</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT PERTAMA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">3</td>
+                                <td class="py-3 px-4 font-mono">09.30 - 10.10</td>
+                                <td class="py-3 px-4 font-semibold text-white">PJOK</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 20</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru PJOK</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">4</td>
+                                <td class="py-3 px-4 font-mono">10.10 - 10.50</td>
+                                <td class="py-3 px-4 font-semibold text-white">PJOK</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 20</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru PJOK</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">5</td>
+                                <td class="py-3 px-4 font-mono">10.50 - 11.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Mandarin</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 25</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Junaidi</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">6</td>
+                                <td class="py-3 px-4 font-mono">11.30 - 12.10</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Mandarin</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 25</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Junaidi</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">🍱</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">12.10 - 12.40</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT KEDUA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">7</td>
+                                <td class="py-3 px-4 font-mono">12.40 - 13.20</td>
+                                <td class="py-3 px-4 font-semibold text-white">Geografi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 14</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Geografi</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">8</td>
+                                <td class="py-3 px-4 font-mono">13.20 - 14.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Geografi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 14</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Geografi</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">9</td>
+                                <td class="py-3 px-4 font-mono">14.00 - 14.40</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bimbingan Konseling</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 11</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Konseling (BK)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- SELASA -->
+            <div id="schedule-card-selasa" class="schedule-day-card glass-card rounded-2xl p-5 md:p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-sky-400/30 pb-3">
+                    <h2 class="font-display font-extrabold text-xl text-white flex items-center gap-2">
+                        <span class="p-2 rounded-xl bg-sky-500/20 text-sky-300 border border-sky-400/40 text-sm">🗓️</span>
+                        <span>SELASA</span>
+                    </h2>
+                    <span class="text-xs text-sky-300 font-semibold bg-sky-950/80 px-3 py-1 rounded-full border border-sky-400/30">06.30 - 14.30 WIB</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-slate-900/90 text-sky-300 uppercase tracking-wider font-bold border-b border-sky-400/30">
+                                <th class="py-3 px-4 rounded-l-xl w-16 text-center">JP</th>
+                                <th class="py-3 px-4 w-36">Waktu</th>
+                                <th class="py-3 px-4">Mata Pelajaran</th>
+                                <th class="py-3 px-4 w-28 text-center">KD Guru</th>
+                                <th class="py-3 px-4 rounded-r-xl w-48">Nama Guru Pengajar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-sky-400/10 text-slate-200">
+                            <tr class="hover:bg-sky-500/10 transition-colors bg-sky-500/5">
+                                <td class="py-3 px-4 text-center font-semibold text-slate-400">-</td>
+                                <td class="py-3 px-4 font-mono font-medium text-sky-300">06.30 - 06.45</td>
+                                <td class="py-3 px-4 font-bold text-sky-200">Pembiasaan Awal</td>
+                                <td class="py-3 px-4 text-center font-mono text-slate-400">-</td>
+                                <td class="py-3 px-4 font-medium text-slate-300">Guru Wali Kelas XI.3</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">1</td>
+                                <td class="py-3 px-4 font-mono">06.45 - 07.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Sosiologi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 3</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Cornel Kaban</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">2</td>
+                                <td class="py-3 px-4 font-mono">07.30 - 08.15</td>
+                                <td class="py-3 px-4 font-semibold text-white">Sosiologi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 3</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Cornel Kaban</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">3</td>
+                                <td class="py-3 px-4 font-mono">08.15 - 09.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Seni Budaya</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 5</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Divana</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">4</td>
+                                <td class="py-3 px-4 font-mono">09.00 - 09.45</td>
+                                <td class="py-3 px-4 font-semibold text-white">Seni Budaya</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 5</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Divana</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">☕</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">09.45 - 10.05</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT PERTAMA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">5</td>
+                                <td class="py-3 px-4 font-mono">10.05 - 10.50</td>
+                                <td class="py-3 px-4 font-semibold text-white">PPKn</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 2</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Agus Salim</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">6</td>
+                                <td class="py-3 px-4 font-mono">10.50 - 11.35</td>
+                                <td class="py-3 px-4 font-semibold text-white">PPKn</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 2</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Agus Salim</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">🍱</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">11.35 - 12.00</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT KEDUA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">7</td>
+                                <td class="py-3 px-4 font-mono">12.00 - 12.40</td>
+                                <td class="py-3 px-4 font-semibold text-white">Agama</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 26</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Suwarni</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">8</td>
+                                <td class="py-3 px-4 font-mono">12.40 - 13.20</td>
+                                <td class="py-3 px-4 font-semibold text-white">Agama</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 26</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Suwarni</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">9</td>
+                                <td class="py-3 px-4 font-mono">13.20 - 14.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Biologi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 21</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Biologi</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">10</td>
+                                <td class="py-3 px-4 font-mono">14.00 - 14.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Matematika Wajib</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 10</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Jefry Corpry YH</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- RABU -->
+            <div id="schedule-card-rabu" class="schedule-day-card glass-card rounded-2xl p-5 md:p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-sky-400/30 pb-3">
+                    <h2 class="font-display font-extrabold text-xl text-white flex items-center gap-2">
+                        <span class="p-2 rounded-xl bg-sky-500/20 text-sky-300 border border-sky-400/40 text-sm">🗓️</span>
+                        <span>RABU</span>
+                    </h2>
+                    <span class="text-xs text-sky-300 font-semibold bg-sky-950/80 px-3 py-1 rounded-full border border-sky-400/30">06.30 - 15.20 WIB</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-slate-900/90 text-sky-300 uppercase tracking-wider font-bold border-b border-sky-400/30">
+                                <th class="py-3 px-4 rounded-l-xl w-16 text-center">JP</th>
+                                <th class="py-3 px-4 w-36">Waktu</th>
+                                <th class="py-3 px-4">Mata Pelajaran</th>
+                                <th class="py-3 px-4 w-28 text-center">KD Guru</th>
+                                <th class="py-3 px-4 rounded-r-xl w-48">Nama Guru Pengajar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-sky-400/10 text-slate-200">
+                            <tr class="hover:bg-sky-500/10 transition-colors bg-sky-500/5">
+                                <td class="py-3 px-4 text-center font-semibold text-slate-400">-</td>
+                                <td class="py-3 px-4 font-mono font-medium text-sky-300">06.30 - 06.45</td>
+                                <td class="py-3 px-4 font-bold text-sky-200">Pembiasaan Awal</td>
+                                <td class="py-3 px-4 text-center font-mono text-slate-400">-</td>
+                                <td class="py-3 px-4 font-medium text-slate-300">Guru Wali Kelas XI.3</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">1</td>
+                                <td class="py-3 px-4 font-mono">06.45 - 07.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Mandarin</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 25</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Junaidi</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">2</td>
+                                <td class="py-3 px-4 font-mono">07.30 - 08.15</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Mandarin</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 25</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Junaidi</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">3</td>
+                                <td class="py-3 px-4 font-mono">08.15 - 09.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Kimia</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 6</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Feby Urmasari</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">☕</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">09.00 - 09.30</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT PERTAMA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">4</td>
+                                <td class="py-3 px-4 font-mono">09.30 - 10.10</td>
+                                <td class="py-3 px-4 font-semibold text-white">Budaya Humanis</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 9</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Iriwaty Japutra</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">5</td>
+                                <td class="py-3 px-4 font-mono">10.10 - 10.50</td>
+                                <td class="py-3 px-4 font-semibold text-white">Budi Pekerti</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 9</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Iriwaty Japutra</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">6</td>
+                                <td class="py-3 px-4 font-mono">10.50 - 11.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Sejarah</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 2</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Agus Salim</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">7</td>
+                                <td class="py-3 px-4 font-mono">11.30 - 12.10</td>
+                                <td class="py-3 px-4 font-semibold text-white">Sejarah</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 2</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Agus Salim</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">🍱</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">12.10 - 12.40</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT KEDUA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">8</td>
+                                <td class="py-3 px-4 font-mono">12.40 - 13.20</td>
+                                <td class="py-3 px-4 font-semibold text-white">Ekonomi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 4</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Debie Lolas</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">9</td>
+                                <td class="py-3 px-4 font-mono">13.20 - 14.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Ekonomi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 4</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Debie Lolas</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">10</td>
+                                <td class="py-3 px-4 font-mono">14.00 - 14.40</td>
+                                <td class="py-3 px-4 font-semibold text-white">Kokurikuler</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 18</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Sartika</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">11</td>
+                                <td class="py-3 px-4 font-mono">14.40 - 15.20</td>
+                                <td class="py-3 px-4 font-semibold text-white">Kokurikuler</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 18</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Sartika</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- KAMIS -->
+            <div id="schedule-card-kamis" class="schedule-day-card glass-card rounded-2xl p-5 md:p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-sky-400/30 pb-3">
+                    <h2 class="font-display font-extrabold text-xl text-white flex items-center gap-2">
+                        <span class="p-2 rounded-xl bg-sky-500/20 text-sky-300 border border-sky-400/40 text-sm">🗓️</span>
+                        <span>KAMIS</span>
+                    </h2>
+                    <span class="text-xs text-sky-300 font-semibold bg-sky-950/80 px-3 py-1 rounded-full border border-sky-400/30">06.30 - 15.15 WIB</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-slate-900/90 text-sky-300 uppercase tracking-wider font-bold border-b border-sky-400/30">
+                                <th class="py-3 px-4 rounded-l-xl w-16 text-center">JP</th>
+                                <th class="py-3 px-4 w-36">Waktu</th>
+                                <th class="py-3 px-4">Mata Pelajaran</th>
+                                <th class="py-3 px-4 w-28 text-center">KD Guru</th>
+                                <th class="py-3 px-4 rounded-r-xl w-48">Nama Guru Pengajar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-sky-400/10 text-slate-200">
+                            <tr class="hover:bg-sky-500/10 transition-colors bg-sky-500/5">
+                                <td class="py-3 px-4 text-center font-semibold text-slate-400">-</td>
+                                <td class="py-3 px-4 font-mono font-medium text-sky-300">06.30 - 06.45</td>
+                                <td class="py-3 px-4 font-bold text-sky-200">Pembiasaan Awal</td>
+                                <td class="py-3 px-4 text-center font-mono text-slate-400">-</td>
+                                <td class="py-3 px-4 font-medium text-slate-300">Guru Wali Kelas XI.3</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">1</td>
+                                <td class="py-3 px-4 font-mono">06.45 - 07.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Matematika Wajib</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 10</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Jefry Corpry YH</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">2</td>
+                                <td class="py-3 px-4 font-mono">07.30 - 08.15</td>
+                                <td class="py-3 px-4 font-semibold text-white">Matematika Wajib</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 10</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Jefry Corpry YH</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">3</td>
+                                <td class="py-3 px-4 font-mono">08.15 - 09.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Kokurikuler</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 22</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Informatika</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">☕</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">09.00 - 09.30</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT PERTAMA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">4</td>
+                                <td class="py-3 px-4 font-mono">09.30 - 10.15</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Inggris</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 27</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Bahasa Inggris</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">5</td>
+                                <td class="py-3 px-4 font-mono">10.15 - 11.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Inggris</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 27</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Bahasa Inggris</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">6</td>
+                                <td class="py-3 px-4 font-mono">11.00 - 11.45</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Inggris</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 27</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Bahasa Inggris</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">🍱</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">11.45 - 12.30</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT KEDUA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">7</td>
+                                <td class="py-3 px-4 font-mono">12.30 - 13.15</td>
+                                <td class="py-3 px-4 font-semibold text-white">Informatika</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 22</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Informatika</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">8</td>
+                                <td class="py-3 px-4 font-mono">13.15 - 13.55</td>
+                                <td class="py-3 px-4 font-semibold text-white">Informatika</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 22</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Informatika</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">9</td>
+                                <td class="py-3 px-4 font-mono">13.55 - 14.35</td>
+                                <td class="py-3 px-4 font-semibold text-white">Fisika</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 18</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Sartika</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">10</td>
+                                <td class="py-3 px-4 font-mono">14.35 - 15.15</td>
+                                <td class="py-3 px-4 font-semibold text-white">Fisika</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 18</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Sartika</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- JUMAT -->
+            <div id="schedule-card-jumat" class="schedule-day-card glass-card rounded-2xl p-5 md:p-6 space-y-4">
+                <div class="flex items-center justify-between border-b border-sky-400/30 pb-3">
+                    <h2 class="font-display font-extrabold text-xl text-white flex items-center gap-2">
+                        <span class="p-2 rounded-xl bg-sky-500/20 text-sky-300 border border-sky-400/40 text-sm">🗓️</span>
+                        <span>JUMAT</span>
+                    </h2>
+                    <span class="text-xs text-sky-300 font-semibold bg-sky-950/80 px-3 py-1 rounded-full border border-sky-400/30">06.30 - 14.30 WIB</span>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                        <thead>
+                            <tr class="bg-slate-900/90 text-sky-300 uppercase tracking-wider font-bold border-b border-sky-400/30">
+                                <th class="py-3 px-4 rounded-l-xl w-16 text-center">JP</th>
+                                <th class="py-3 px-4 w-36">Waktu</th>
+                                <th class="py-3 px-4">Mata Pelajaran</th>
+                                <th class="py-3 px-4 w-28 text-center">KD Guru</th>
+                                <th class="py-3 px-4 rounded-r-xl w-48">Nama Guru Pengajar</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-sky-400/10 text-slate-200">
+                            <tr class="hover:bg-sky-500/10 transition-colors bg-sky-500/5">
+                                <td class="py-3 px-4 text-center font-semibold text-slate-400">-</td>
+                                <td class="py-3 px-4 font-mono font-medium text-sky-300">06.30 - 07.15</td>
+                                <td class="py-3 px-4 font-bold text-sky-200">Jumat Bersih / Sehat / Literasi / Ekspresi / Public Speaking</td>
+                                <td class="py-3 px-4 text-center font-mono text-slate-400">-</td>
+                                <td class="py-3 px-4 font-medium text-slate-300">Tim Kesiswaan / Guru Wali</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">1</td>
+                                <td class="py-3 px-4 font-mono">07.15 - 08.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Indonesia</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 24</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Bahasa Indonesia</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">2</td>
+                                <td class="py-3 px-4 font-mono">08.00 - 08.45</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Indonesia</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 24</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Bahasa Indonesia</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">☕</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">08.45 - 09.15</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT PERTAMA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">3</td>
+                                <td class="py-3 px-4 font-mono">09.15 - 10.00</td>
+                                <td class="py-3 px-4 font-semibold text-white">Bahasa Indonesia</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 24</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Bahasa Indonesia</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">4</td>
+                                <td class="py-3 px-4 font-mono">10.00 - 10.45</td>
+                                <td class="py-3 px-4 font-semibold text-white">Matematika Wajib</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 10</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Jefry Corpry YH</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">5</td>
+                                <td class="py-3 px-4 font-mono">10.45 - 11.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Matematika Wajib</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 10</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Jefry Corpry YH</td>
+                            </tr>
+                            <tr class="bg-indigo-500/10 text-indigo-200 border-y border-indigo-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-indigo-300">🕌</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">11.30 - 12.30</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">JUMAT IBADAH</td>
+                            </tr>
+                            <tr class="bg-amber-500/10 text-amber-200 border-y border-amber-400/20">
+                                <td class="py-2.5 px-4 text-center font-bold text-amber-300">🍱</td>
+                                <td class="py-2.5 px-4 font-mono font-semibold">12.30 - 13.00</td>
+                                <td class="py-2.5 px-4 font-bold tracking-wide" colspan="3">ISTIRAHAT KEDUA</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">6</td>
+                                <td class="py-3 px-4 font-mono">13.00 - 13.45</td>
+                                <td class="py-3 px-4 font-semibold text-white">Biologi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 21</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Biologi</td>
+                            </tr>
+                            <tr class="hover:bg-sky-500/10 transition-colors search-item">
+                                <td class="py-3 px-4 text-center font-bold text-sky-400">7</td>
+                                <td class="py-3 px-4 font-mono">13.45 - 14.30</td>
+                                <td class="py-3 px-4 font-semibold text-white">Biologi</td>
+                                <td class="py-3 px-4 text-center font-mono font-extrabold text-sky-300"><span class="bg-sky-950 px-2.5 py-1 rounded border border-sky-400/30">KD 21</span></td>
+                                <td class="py-3 px-4 font-medium text-slate-100">Guru Biologi</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- MASTER DAFTAR GURU & KODE GURU (KD) SECTION -->
+        <section id="daftar-guru-section" class="glass-card rounded-3xl p-6 sm:p-8 space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-sky-400/30 pb-4">
+                <div>
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-sky-500/20 text-xs font-bold text-sky-200 mb-2 border border-sky-400/40">
+                        <span>👨‍🏫</span>
+                        <span>Informasi Tenaga Pengajar</span>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-white flex items-center gap-2">
+                        <span>Daftar Guru Pengajar & Kode Guru (KD)</span>
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-300 font-medium pt-1">
+                        Daftar lengkap kode guru (KD), nama lengkap guru pengajar, dan mata pelajaran yang diampu di Kelas XI.3
+                    </p>
+                </div>
+                <span class="text-xs text-sky-300 font-mono font-bold px-3 py-1.5 rounded-xl bg-sky-950/90 border border-sky-400/40 self-start sm:self-auto">
+                    Total 17 KD Pengajar
+                </span>
+            </div>
+
+            <!-- Teacher Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                
+                <!-- KD 2 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 to-blue-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            AS
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 2
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Agus Salim</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: PPKn & Sejarah</p>
+                    </div>
+                </div>
+
+                <!-- KD 3 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-400 to-purple-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            CK
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 3
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Cornel Kaban</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Sosiologi</p>
+                    </div>
+                </div>
+
+                <!-- KD 4 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-400 to-teal-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            DL
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 4
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Debie Lolas</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Ekonomi</p>
+                    </div>
+                </div>
+
+                <!-- KD 5 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-pink-400 to-rose-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            DV
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 5
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Divana</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Seni Budaya</p>
+                    </div>
+                </div>
+
+                <!-- KD 6 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-400 to-orange-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            FU
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 6
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Feby Urmasari</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Kimia</p>
+                    </div>
+                </div>
+
+                <!-- KD 9 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-300 to-indigo-500 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            IJ
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 9
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Iriwaty Japutra</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Budaya Humanis & Budi Pekerti</p>
+                    </div>
+                </div>
+
+                <!-- KD 10 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 to-blue-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            JC
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 10
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Jefry Corpry YH</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Matematika Wajib</p>
+                    </div>
+                </div>
+
+                <!-- KD 11 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-400 to-purple-700 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            BK
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 11
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Guru Bimbingan Konseling</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Konseling (BK)</p>
+                    </div>
+                </div>
+
+                <!-- KD 14 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-lime-400 to-green-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            GG
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 14
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Guru Geografi</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Geografi</p>
+                    </div>
+                </div>
+
+                <!-- KD 18 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-fuchsia-400 to-pink-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            ST
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 18
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Sartika</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Fisika & Kokurikuler</p>
+                    </div>
+                </div>
+
+                <!-- KD 20 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-yellow-400 to-amber-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            PJ
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 20
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Guru PJOK</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: PJOK</p>
+                    </div>
+                </div>
+
+                <!-- KD 21 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-400 to-emerald-700 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            BIO
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 21
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Guru Biologi</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Biologi</p>
+                    </div>
+                </div>
+
+                <!-- KD 22 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-400 to-blue-500 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            INF
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 22
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Guru Informatika</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Informatika & Kokurikuler</p>
+                    </div>
+                </div>
+
+                <!-- KD 24 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-red-400 to-rose-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            BIN
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 24
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Guru Bahasa Indonesia</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Bahasa Indonesia</p>
+                    </div>
+                </div>
+
+                <!-- KD 25 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-red-500 to-amber-500 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            JN
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 25
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Junaidi</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Bahasa Mandarin</p>
+                    </div>
+                </div>
+
+                <!-- KD 26 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-300 to-yellow-500 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            SW
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 26
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Suwarni</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Agama</p>
+                    </div>
+                </div>
+
+                <!-- KD 27 -->
+                <div class="p-4 bg-slate-900/90 rounded-2xl border border-sky-400/30 glass-card-hover space-y-3 flex flex-col justify-between">
+                    <div class="flex items-start justify-between gap-2">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-400 to-indigo-600 flex items-center justify-center font-bold text-slate-950 text-sm shadow-md">
+                            BIG
+                        </div>
+                        <span class="px-2.5 py-1 rounded-lg bg-sky-950 text-sky-300 font-mono font-extrabold text-xs border border-sky-400/40">
+                            KD 27
+                        </span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-base">Guru Bahasa Inggris</h3>
+                        <p class="text-xs text-sky-300 font-medium">Mata Pelajaran: Bahasa Inggris</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER HALAMAN -->
+    <footer class="p-6 border-t border-sky-400/30 bg-[#0f172a] backdrop-blur-md mt-auto z-10 no-print">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-300 font-medium">
+            <p>&copy; 2026 Jessica • Halaman Jadwal Pelajaran XI.3 Sekolah Cinta Kasih Tzu Chi</p>
+            <div class="flex items-center space-x-4">
+                <a href="https://www.instagram.com/jeessiicaj?igsh=MXBrZHpuZTlnNWNjcg==" target="_blank" rel="noopener" class="text-sky-300 hover:text-white transition-colors font-semibold">Instagram</a>
+                <span>•</span>
+                <a href="https://www.tiktok.com/@0720trassh?_r=1&_t=ZS-98Dmln04zuH" target="_blank" rel="noopener" class="text-sky-300 hover:text-white transition-colors font-semibold">TikTok</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // Toggle mobile menu visibility
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Scroll to Guru Section
+        function scrollToGuruSection() {
+            document.getElementById('daftar-guru-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Filter Day Schedule
+        function filterDaySchedule(day) {
+            const cards = document.querySelectorAll('.schedule-day-card');
+            const buttons = document.querySelectorAll('.day-filter-btn');
+
+            // Reset buttons style
+            buttons.forEach(btn => {
+                btn.className = "day-filter-btn px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold text-sky-200 hover:text-white bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 transition-all cursor-pointer";
+            });
+
+            // Set active button style
+            const activeBtn = document.getElementById(`day-btn-${day}`);
+            if (activeBtn) {
+                activeBtn.className = "day-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-extrabold bg-gradient-to-r from-sky-400 to-blue-500 text-slate-950 shadow-md cursor-pointer transition-all scale-105";
+            }
+
+            // Filter cards
+            cards.forEach(card => {
+                if (day === 'all' || card.id === `schedule-card-${day}`) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Live Search Schedule & Guru
+        function searchSchedule() {
+            const query = document.getElementById('schedule-search').value.toLowerCase().trim();
+            const rows = document.querySelectorAll('.search-item');
+
+            if (query === '') {
+                rows.forEach(row => row.style.display = '');
+                return;
+            }
+
+            rows.forEach(row => {
+                const text = row.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    row.style.display = '';
+                } else {
+                    row.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

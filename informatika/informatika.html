@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="id" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatika — Topografi, Biner, Kriptografi, HTML, CSS & Antigravity | Jessica</title>
+    <meta name="description"
+        content="Modul Pembelajaran Informatika Jessica - Sekolah Cinta Kasih Tzu Chi. Meliputi Topografi Digital, Sistem Angka Biner, Kriptografi, HTML, CSS, dan Antigravity dengan Demonstrasi Interaktif.">
+
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts: Inter, Plus Jakarta Sans & Fira Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style type="text/tailwindcss">
+        @theme {
+            --font-sans: 'Inter', sans-serif;
+            --font-display: 'Plus Jakarta Sans', sans-serif;
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        /* Bright Radiant Galaxy Blue Background */
+        body {
+            background-color: #0f172a;
+            background-image: 
+                radial-gradient(circle at 10% 15%, rgba(56, 189, 248, 0.22) 0%, transparent 45%),
+                radial-gradient(circle at 85% 65%, rgba(99, 102, 241, 0.22) 0%, transparent 45%),
+                radial-gradient(circle at 50% 90%, rgba(192, 132, 252, 0.16) 0%, transparent 55%);
+            background-attachment: fixed;
+        }
+
+        /* Twinkling star particle animation */
+        .star-particle {
+            position: absolute;
+            background: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 0 6px rgba(56, 189, 248, 0.8);
+            animation: twinkle var(--duration, 3s) infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(0.8); }
+            50% { opacity: 1; transform: scale(1.4); }
+        }
+
+        /* Antigravity Floating Pulse Animation */
+        @keyframes floatLevitate {
+            0%, 100% { transform: translateY(0px) scale(1); box-shadow: 0 0 25px rgba(56, 189, 248, 0.8); }
+            50% { transform: translateY(-18px) scale(1.05); box-shadow: 0 0 45px rgba(192, 132, 252, 0.9); }
+        }
+
+        .antigravity-levitate {
+            animation: floatLevitate 3s infinite ease-in-out;
+        }
+
+        .google-shadow-dark {
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.25), 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .google-shadow-dark:focus-within {
+            box-shadow: 0 0 40px rgba(56, 189, 248, 0.45), 0 6px 24px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+            border: 1px solid rgba(56, 189, 248, 0.4);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #38bdf8;
+        }
+    </style>
+</head>
+
+<body class="bg-[#0f172a] text-slate-100 font-sans min-h-screen flex flex-col antialiased overflow-x-hidden relative">
+
+    <!-- Glowing Galaxy Background Particles -->
+    <div class="fixed inset-0 pointer-events-none z-0 overflow-hidden opacity-80">
+        <div class="star-particle w-1.5 h-1.5 top-[8%] left-[12%]" style="--duration: 2.5s"></div>
+        <div class="star-particle w-2 h-2 top-[22%] left-[82%]" style="--duration: 4s"></div>
+        <div class="star-particle w-1.5 h-1.5 top-[60%] left-[8%]" style="--duration: 3s"></div>
+        <div class="star-particle w-2.5 h-2.5 top-[78%] left-[72%]" style="--duration: 5s"></div>
+        <div class="star-particle w-1.5 h-1.5 top-[38%] left-[92%]" style="--duration: 3.5s"></div>
+        <div class="star-particle w-2 h-2 top-[88%] left-[28%]" style="--duration: 4.5s"></div>
+    </div>
+
+    <!-- Top Announcement Banner -->
+    <div
+        class="bg-gradient-to-r from-sky-600 via-indigo-600 to-purple-600 text-white py-2 px-4 text-xs md:text-sm font-medium text-center shadow-md flex items-center justify-center gap-2 z-50">
+        <span class="bg-white/20 px-2.5 py-0.5 rounded-full text-[11px] font-bold tracking-wide uppercase">Galaxy
+            Informatika</span>
+        <i class="fa-solid fa-rocket text-sky-200"></i>
+        <span>SEKOLAH CINTA KASIH TZU CHI — Modul Pembelajaran Informatika Jessica</span>
+    </div>
+
+    <!-- TOP NAVIGATION HEADER -->
+    <header
+        class="sticky top-0 z-50 bg-[#0f172a]/90 backdrop-blur-md border-b border-sky-400/30 shadow-[0_4px_25px_rgba(15,23,42,0.8)]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+
+                <!-- Brand Logo with Jessica Photo (Left) -->
+                <a href="index.html" class="flex items-center space-x-3 cursor-pointer">
+                    <div
+                        class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-sky-400 via-blue-500 to-indigo-500 p-0.5 shadow-[0_0_20px_rgba(56,189,248,0.6)] overflow-hidden shrink-0">
+                        <img src="dashboard_photo.jpg" alt="Foto Jessica"
+                            class="w-full h-full object-cover rounded-[10px]">
+                    </div>
+                    <div>
+                        <h1
+                            class="font-display font-bold text-lg md:text-xl tracking-tight text-white flex items-center gap-1.5">
+                            <span>Jessica</span>
+                            <span class="text-sky-400 text-sm">| Informatika ✨</span>
+                        </h1>
+                        <p class="text-[11px] text-sky-300 font-semibold tracking-wider uppercase">Sekolah Cinta Kasih
+                            Tzu Chi</p>
+                    </div>
+                </a>
+
+                <!-- Back to Portfolio Link -->
+                <div class="flex items-center space-x-3">
+                    <a href="index.html"
+                        class="px-4 py-2 rounded-xl text-xs md:text-sm font-bold text-sky-200 hover:text-white bg-sky-500/20 hover:bg-sky-500/30 border border-sky-400/40 transition-all flex items-center space-x-2 shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Kembali ke Portofolio</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="flex-1 min-w-0 bg-[#0f172a]/70 z-10 py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-12">
+
+        <!-- ==================== HERO SECTION & GOOGLE SEARCH BAR ==================== -->
+        <section
+            class="relative overflow-hidden rounded-3xl border border-sky-400/40 bg-gradient-to-r from-[#1e293b]/90 via-[#1e1b4b]/90 to-[#0c4a6e]/90 p-8 md:p-12 shadow-[0_10px_35px_rgba(56,189,248,0.25)] backdrop-blur-md text-center space-y-6">
+
+            <div class="max-w-3xl mx-auto space-y-6">
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-2 bg-sky-500/20 text-sky-300 border border-sky-400/40 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-[0_0_15px_rgba(56,189,248,0.3)]">
+                    <i class="fa-solid fa-atom text-sky-400"></i> Center of Knowledge & Search
+                </div>
+
+                <h1 class="font-display text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                    Informatika <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-blue-300 to-purple-300"></span>
+                </h1>
+
+                <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+                    Eksplorasi 7 materi utama informatika: <strong class="text-sky-300">Topografi</strong>, <strong
+                        class="text-sky-300">Angka Biner</strong>, <strong class="text-sky-300">Kriptografi</strong>,
+                    <strong class="text-sky-300">HTML</strong>, <strong class="text-sky-300">CSS</strong>, <strong
+                        class="text-sky-300">Antigravity</strong>, dan <strong class="text-pink-300">Vibe Coding</strong>. Dilengkapi demonstrasi interaktif untuk pengujian
+                    langsung.
+                </p>
+
+                <!-- ==================== GOOGLE SEARCH BAR WIDGET ==================== -->
+                <div class="pt-2 pb-2">
+                    <form action="https://www.google.com/search" method="GET" target="_blank"
+                        class="w-full max-w-2xl mx-auto">
+                        <div
+                            class="relative flex items-center bg-[#0f172a]/90 rounded-full border border-sky-400/50 google-shadow-dark transition-all duration-300 px-5 py-3.5">
+
+                            <!-- Google Multicolor Logo Icon -->
+                            <div class="flex items-center justify-center mr-3 font-bold text-lg select-none">
+                                <span class="text-sky-400">G</span>
+                                <span class="text-rose-400">o</span>
+                                <span class="text-amber-400">o</span>
+                                <span class="text-sky-400">g</span>
+                                <span class="text-emerald-400">l</span>
+                                <span class="text-rose-400">e</span>
+                            </div>
+
+                            <!-- Divider -->
+                            <div class="h-6 w-[1px] bg-sky-500/30 mr-3"></div>
+
+                            <!-- Input Field -->
+                            <input type="text" name="q" id="google-search-input"
+                                placeholder="Cari di Google (contoh: Antigravity AI, Vibe Coding, Quantum Levitation, HTML5...)"
+                                class="w-full bg-transparent text-white text-sm md:text-base placeholder-slate-400 focus:outline-none pr-2 font-medium">
+
+                            <!-- Action Icons & Button -->
+                            <div class="flex items-center gap-2 ml-2">
+                                <button type="button" title="Pencarian Suara"
+                                    onclick="alert('Fitur pencarian suara Google aktif saat Anda menekan tombol Cari!')"
+                                    class="p-2 text-slate-400 hover:text-sky-300 transition-colors">
+                                    <i class="fa-solid fa-microphone text-base"></i>
+                                </button>
+                                <button type="submit"
+                                    class="bg-gradient-to-r from-sky-400 via-blue-500 to-indigo-500 hover:from-sky-300 hover:to-blue-400 text-slate-950 p-2.5 rounded-full shadow-[0_0_15px_rgba(56,189,248,0.5)] transition-all duration-200 flex items-center justify-center w-10 h-10 font-bold">
+                                    <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Quick Suggestion Tags -->
+                    <div class="mt-4 flex flex-wrap items-center justify-center gap-2 text-xs">
+                        <span class="text-slate-400 font-semibold">Rekomendasi:</span>
+                        <button onclick="setSearchQuery('Topografi Digital DEM GIS')"
+                            class="px-3 py-1 bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 rounded-full text-sky-200 hover:text-white transition-all">
+                            🌐 Topografi
+                        </button>
+                        <button onclick="setSearchQuery('Sistem Angka Biner 0101')"
+                            class="px-3 py-1 bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 rounded-full text-sky-200 hover:text-white transition-all">
+                            🔢 Angka Biner
+                        </button>
+                        <button onclick="setSearchQuery('Kriptografi Caesar Cipher')"
+                            class="px-3 py-1 bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 rounded-full text-sky-200 hover:text-white transition-all">
+                            🔐 Kriptografi
+                        </button>
+                        <button onclick="setSearchQuery('HTML5 Struktur Tag')"
+                            class="px-3 py-1 bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 rounded-full text-sky-200 hover:text-white transition-all">
+                            🏷️ HTML
+                        </button>
+                        <button onclick="setSearchQuery('CSS3 Styling Flexbox Grid')"
+                            class="px-3 py-1 bg-slate-800/80 hover:bg-sky-500/20 border border-sky-400/30 rounded-full text-sky-200 hover:text-white transition-all">
+                            🎨 CSS
+                        </button>
+                        <button onclick="setSearchQuery('Antigravity AI Quantum Levitation')"
+                            class="px-3 py-1 bg-slate-800/80 hover:bg-purple-500/20 border border-purple-400/30 rounded-full text-purple-200 hover:text-white transition-all">
+                            🚀 Antigravity
+                        </button>
+                        <button onclick="setSearchQuery('Vibe Coding AI Programming Assistant')"
+                            class="px-3 py-1 bg-slate-800/80 hover:bg-pink-500/20 border border-pink-400/30 rounded-full text-pink-200 hover:text-white transition-all">
+                            🎧 Vibe Coding
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Jump Navigation Tabs (7 Topics) -->
+        <div class="flex flex-wrap items-center justify-center gap-2.5">
+            <a href="#section-topografi"
+                class="px-3.5 py-2 rounded-2xl bg-slate-900/80 border border-sky-400/30 hover:border-sky-400 shadow-md hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all font-bold text-xs md:text-sm text-sky-200 hover:text-white flex items-center gap-1.5">
+                <span>🌐</span> 1. Topografi Digital
+            </a>
+            <a href="#section-biner"
+                class="px-3.5 py-2 rounded-2xl bg-slate-900/80 border border-sky-400/30 hover:border-sky-400 shadow-md hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all font-bold text-xs md:text-sm text-sky-200 hover:text-white flex items-center gap-1.5">
+                <span>🔢</span> 2. Angka Biner
+            </a>
+            <a href="#section-kriptografi"
+                class="px-3.5 py-2 rounded-2xl bg-slate-900/80 border border-sky-400/30 hover:border-sky-400 shadow-md hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all font-bold text-xs md:text-sm text-sky-200 hover:text-white flex items-center gap-1.5">
+                <span>🔐</span> 3. Kriptografi
+            </a>
+            <a href="#section-html"
+                class="px-3.5 py-2 rounded-2xl bg-slate-900/80 border border-sky-400/30 hover:border-sky-400 shadow-md hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all font-bold text-xs md:text-sm text-sky-200 hover:text-white flex items-center gap-1.5">
+                <span>🏷️</span> 4. HTML
+            </a>
+            <a href="#section-css"
+                class="px-3.5 py-2 rounded-2xl bg-slate-900/80 border border-sky-400/30 hover:border-sky-400 shadow-md hover:shadow-[0_0_20px_rgba(56,189,248,0.3)] transition-all font-bold text-xs md:text-sm text-sky-200 hover:text-white flex items-center gap-1.5">
+                <span>🎨</span> 5. CSS
+            </a>
+            <a href="#section-antigravity"
+                class="px-3.5 py-2 rounded-2xl bg-slate-900/80 border border-purple-400/40 hover:border-purple-400 shadow-md hover:shadow-[0_0_20px_rgba(192,132,252,0.4)] transition-all font-bold text-xs md:text-sm text-purple-200 hover:text-white flex items-center gap-1.5">
+                <span>🚀</span> 6. Antigravity
+            </a>
+            <a href="#section-vibe-coding"
+                class="px-3.5 py-2 rounded-2xl bg-slate-900/80 border border-pink-400/40 hover:border-pink-400 shadow-md hover:shadow-[0_0_20px_rgba(244,114,182,0.4)] transition-all font-bold text-xs md:text-sm text-pink-200 hover:text-white flex items-center gap-1.5">
+                <span>🎧</span> 7. Vibe Coding
+            </a>
+        </div>
+
+        <!-- ==================== MATERI 1: TOPOGRAFI ==================== -->
+        <section id="section-topografi"
+            class="bg-slate-900/90 rounded-3xl p-6 md:p-10 border border-sky-400/30 shadow-[0_4px_30px_rgba(15,23,42,0.8)] backdrop-blur-md space-y-8">
+
+            <div class="flex items-center gap-4 border-b border-sky-500/20 pb-5">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-700 text-white flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(16,185,129,0.4)]">
+                    🗺️
+                </div>
+                <div>
+                    <span
+                        class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                        Materi 1: Geospasial & Pemetaan
+                    </span>
+                    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mt-1">Topografi & Pemetaan
+                        Digital</h2>
+                </div>
+            </div>
+
+            <!-- Image Media Banner -->
+            <div class="relative overflow-hidden rounded-2xl border border-emerald-500/30 shadow-xl group">
+                <img src="topografi_illustration.png" alt="Topografi Digital GIS 3D Terrain"
+                    class="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-emerald-200">
+                    <span class="bg-emerald-950/80 px-3 py-1 rounded-full border border-emerald-500/40 font-mono">
+                        <i class="fa-solid fa-layer-group text-emerald-400 mr-1"></i> Visualisasi DEM & LiDAR Geospasial 3D
+                    </span>
+                    <span class="text-slate-300 hidden sm:inline">Sistem Informasi Geografis (SIG)</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div class="lg:col-span-2 space-y-5 text-sm md:text-base text-slate-300 leading-relaxed">
+                    <p>
+                        <strong class="text-white">Topografi</strong> adalah cabang ilmu geografi dan geodesi yang mempelajari bentuk fisik permukaan bumi secara mendetail, meliputi relief elevasi, pegunungan, kontur daratan, serta aliran sungai. Secara etimologi, istilah ini berasal dari bahasa Yunani <em>"topos"</em> (tempat) dan <em>"grapho"</em> (menulis). Pemetaan topografi tradisional dahulu dilakukan melalui survei lapangan secara manual menggunakan instrumen teodolit dan leveling.
+                    </p>
+                    <p>
+                        Seiring berkembangnya teknologi informatika, pemetaan topografi kini bertransformasi menjadi <strong class="text-emerald-300">Sistem Informasi Geografis (SIG / GIS)</strong> berbasis komputasi digital. Data elevasi tidak lagi hanya digambar pada kertas, melainkan diolah menggunakan <strong class="text-emerald-300">Digital Elevation Model (DEM)</strong> dan <strong class="text-emerald-300">Light Detection and Ranging (LiDAR)</strong> yang dipasang pada pesawat udara maupun satelit pemantau bumi. Sensor laser LiDAR mampu memancarkan jutaan impuls cahaya per detik untuk mengukur jarak ketinggian permukaan tanah dengan presisi hingga milimeter.
+                    </p>
+
+                    <div class="p-5 rounded-2xl bg-emerald-950/40 border border-emerald-500/30 space-y-3">
+                        <h4 class="font-bold text-emerald-300 text-base flex items-center gap-2">
+                            <i class="fa-solid fa-layer-group text-emerald-400"></i> Komponen Utama Topografi Digital:
+                        </h4>
+                        <ul class="space-y-2 text-xs md:text-sm text-slate-300">
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                <span><strong>DEM (Digital Elevation Model):</strong> Model raster 3D yang menggambarkan
+                                    ketinggian permukaan tanah secara kontinu.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                <span><strong>Garis Kontur Digital:</strong> Garis imajiner yang menghubungkan titik-titik lokasi dengan
+                                    elevasi yang sama.</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                <span><strong>LiDAR (Light Detection and Ranging):</strong> Pemindaian laser udara
+                                    berakurasi tinggi untuk rekonstruksi medan 3D.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <p>
+                        Peran topografi digital sangat krusial dalam berbagai industri modern, seperti perencanaan infrastruktur sipil, pembuatan simulasi lanskap 3D pada <em>game engine</em> (seperti Unreal Engine dan Unity), hingga analisis risiko bencana alam. Algoritma komputasi dapat memproses data koordinat spasial untuk memprediksi daerah aliran air hujan, titik rawan tanah longsor, serta rute navigasi optimal yang memperhitungkan kecuraman medan pada sistem GPS modern seperti Google Maps.
+                    </p>
+                    <p>
+                        <strong class="text-emerald-300">Penerapan Budaya Humanis Tzu Chi:</strong> Di Sekolah Cinta Kasih Tzu Chi, penguasaan materi topografi digital bukan sekadar pencapaian akademis, melainkan wujud rasa kepedulian terhadap lingkungan dan sesama manusia. Pemetaan geospasial yang akurat memungkinkan tim relawan kemanusiaan memprediksi wilayah terdampak banjir atau gempa bumi lebih awal, sehingga evakuasi serta penyaluran logistik bantuan bencana dapat dilakukan secara tepat sasaran, cepat, dan menyelamatkan lebih banyak jiwa.
+                    </p>
+
+                    <!-- Kesimpulan Box -->
+                    <div class="p-5 rounded-2xl bg-slate-950/80 border border-emerald-500/40 space-y-2">
+                        <h4 class="font-bold text-emerald-300 text-sm flex items-center gap-2 uppercase tracking-wider">
+                            <i class="fa-solid fa-lightbulb text-emerald-400"></i> Kesimpulan Materi 1: Topografi Digital
+                        </h4>
+                        <p class="text-xs md:text-sm text-slate-300 leading-relaxed italic">
+                            Topografi Digital mengintegrasikan sains geodesi dan komputasi GIS/DEM modern untuk memetakan permukaan bumi secara presisi 3D. Pemanfaatan data elevasi dan pemetaan digital tidak hanya memajukan teknologi navigasi dan industri kreatif, namun juga menjadi sarana vital penanggulangan bencana demi keselamatan kemanusiaan.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-gradient-to-br from-emerald-900/80 via-teal-900/60 to-slate-900 border border-emerald-500/40 text-white rounded-2xl p-6 shadow-lg space-y-4">
+                    <div
+                        class="inline-flex items-center gap-2 bg-emerald-500/20 px-3 py-1 rounded-full text-xs font-bold text-emerald-300 border border-emerald-500/30">
+                        <i class="fa-solid fa-microchip"></i> Aplikasi Topografi
+                    </div>
+                    <h3 class="font-bold text-lg text-white">Implementasi Nyata:</h3>
+                    <ul class="space-y-3 text-xs text-slate-300">
+                        <li class="p-3 bg-slate-900/80 rounded-xl border border-emerald-500/20">
+                            <strong class="text-emerald-300 block font-semibold mb-0.5">Google Maps & GPS:</strong>
+                            Navigasi jalan berbasis elevasi dan kemiringan medan rute perjalanan.
+                        </li>
+                        <li class="p-3 bg-slate-900/80 rounded-xl border border-emerald-500/20">
+                            <strong class="text-emerald-300 block font-semibold mb-0.5">3D Game Engine (Unreal /
+                                Unity):</strong>
+                            Membuat lanskap dunia game realistis menggunakan data heightmap topografi.
+                        </li>
+                        <li class="p-3 bg-slate-900/80 rounded-xl border border-emerald-500/20">
+                            <strong class="text-emerald-300 block font-semibold mb-0.5">Mitigasi Bencana:</strong>
+                            Simulasi daerah genangan banjir dan pemetaan wilayah rawan longsor.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MATERI 2: ANGKA BINER ==================== -->
+        <section id="section-biner"
+            class="bg-slate-900/90 rounded-3xl p-6 md:p-10 border border-sky-400/30 shadow-[0_4px_30px_rgba(15,23,42,0.8)] backdrop-blur-md space-y-8">
+
+            <div class="flex items-center gap-4 border-b border-sky-500/20 pb-5">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-sky-500 to-blue-700 text-white flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(56,189,248,0.4)]">
+                    🔢
+                </div>
+                <div>
+                    <span
+                        class="px-3 py-1 rounded-full text-xs font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                        Materi 2: Arsitektur Komputer & Logika
+                    </span>
+                    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mt-1">Sistem Angka Biner
+                        (Binary System)</h2>
+                </div>
+            </div>
+
+            <!-- Image Media Banner -->
+            <div class="relative overflow-hidden rounded-2xl border border-sky-500/30 shadow-xl group">
+                <img src="biner_illustration.png" alt="Sistem Angka Biner Computer Architecture"
+                    class="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-sky-200">
+                    <span class="bg-sky-950/80 px-3 py-1 rounded-full border border-sky-500/40 font-mono">
+                        <i class="fa-solid fa-code text-sky-400 mr-1"></i> Transistor 0 (OFF) & 1 (ON) Digital Data Stream
+                    </span>
+                    <span class="text-slate-300 hidden sm:inline">Arsitektur Komputer Mikroprosesor</span>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm md:text-base text-slate-300 leading-relaxed">
+                <p>
+                    <strong class="text-white">Sistem Angka Biner</strong> (sistem bilangan berbasis 2) merupakan fondasi paling mendasar dari seluruh arsitektur komputer modern. Tidak seperti manusia yang menggunakan sistem desimal berbasis 10 (angka 0 hingga 9), mesin digital hanya mengenal dua keadaan logis, yaitu digit <strong class="text-sky-400">0 (OFF / Low Voltage)</strong> dan digit <strong class="text-sky-400">1 (ON / High Voltage)</strong>. Dua simbol sederhana ini melambangkan keadaan fisik transistor di dalam sirkuit terpadu mikroprosesor.
+                </p>
+
+                <p>
+                    Di tingkat perangkat keras (hardware), miliaran transistor yang terdapat pada CPU (*Central Processing Unit*) diatur menggunakan gerbang logika mikro (*logic gates*) seperti AND, OR, NOT, NAND, dan XOR. Penggabungan sirkuit gerbang logika ini memungkinkan komputer melakukan operasi aritmatika kompleks, eksekusi kode instruksi, hingga pemrosesan grafik tingkat tinggi secara sangat cepat dengan frekuensi clock hingga miliaran siklus per detik (GHz).
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-2xl bg-slate-950/70 border border-sky-500/30 space-y-3">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-lg font-bold border border-sky-500/40">
+                            <i class="fa-solid fa-database"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Konsep Bit & Byte</h3>
+                        <p class="text-xs md:text-sm text-slate-300">
+                            Satu unit biner tunggal disebut <strong>Bit</strong>. Kombinasi 8 Bit membentuk 1
+                            <strong>Byte</strong>.
+                        </p>
+                        <ul
+                            class="text-xs text-sky-300 space-y-1 font-mono bg-slate-900 p-3 rounded-xl border border-sky-500/20">
+                            <li>1 Bit = 0 atau 1</li>
+                            <li>1 Byte = 8 Bit (misal: 01000001 = 'A')</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-950/70 border border-sky-500/30 space-y-3">
+                        <div
+                            class="w-10 h-10 rounded-xl bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg font-bold border border-indigo-500/40">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <h3 class="font-bold text-white text-lg">Gerbang Logika (Logic Gates)</h3>
+                        <p class="text-xs md:text-sm text-slate-300">
+                            Prosesor mengolah angka biner melalui gerbang logika mikro pada transistor:
+                        </p>
+                        <div class="grid grid-cols-3 gap-2 text-center text-xs font-semibold">
+                            <div class="p-2 bg-slate-900 rounded-lg border border-sky-500/20 text-sky-300">AND (Keduanya
+                                1)</div>
+                            <div class="p-2 bg-slate-900 rounded-lg border border-sky-500/20 text-sky-300">OR (Salah
+                                satu 1)</div>
+                            <div class="p-2 bg-slate-900 rounded-lg border border-sky-500/20 text-sky-300">NOT
+                                (Pembalikan)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    Dalam hierarki penyimpanan data, satu digit biner tunggal disebut sebagai <em>Bit</em> (*Binary Digit*). Pengelompokan 8 Bit membentuk 1 <em>Byte</em>, yang menjadi standar pengkodean satu karakter teks berdasarkan skema ASCII (*American Standard Code for Information Interchange*) atau unicode UTF-8. Seluruh bentuk informasi digital—mulai dari dokumen teks, foto digital JPEG, rekaman suara MP3, hingga video streaming 4K—pada dasarnya dikonversi dan disimpan di dalam memori komputer sebagai deret angka biner yang sangat panjang.
+                </p>
+
+                <p>
+                    Memahami konsep angka biner memberikan wawasan mendalam mengenai cara kerja memori (*RAM*), pengalamatan IP (*IP Address IPv4/IPv6*), pemrosesan sinyal digital, hingga pengkodean warna piksel RGB (Red, Green, Blue). Penguasaan matematika biner juga membantu para pemrogram memahami efisiensi memori dan optimasi struktur data pada tingkat sistem komputasi terendah.
+                </p>
+
+                <!-- Kesimpulan Box -->
+                <div class="p-5 rounded-2xl bg-slate-950/80 border border-sky-500/40 space-y-2">
+                    <h4 class="font-bold text-sky-300 text-sm flex items-center gap-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-lightbulb text-sky-400"></i> Kesimpulan Materi 2: Sistem Angka Biner
+                    </h4>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed italic">
+                        Sistem Angka Biner adalah bahasa universal mesin komputer yang mengubah aliran listrik 0 (OFF) dan 1 (ON) menjadi data digital multi-dimensi. Logika biner merupakan DNA utama yang menggerakkan seluruh perangkat lunak, sistem operasi, dan jaringan internet global.
+                    </p>
+                </div>
+
+                <!-- DEMONSTRASI INTERAKTIF BINER -->
+                <div
+                    class="bg-[#0b1329] border border-sky-400/40 text-white p-6 md:p-8 rounded-3xl shadow-xl space-y-5">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <div class="flex items-center gap-2">
+                            <span class="text-emerald-400 font-mono text-xl font-bold">&gt;_</span>
+                            <h3 class="font-bold text-lg text-white">Demonstrasi Interaktif: Converter Desimal ke Biner
+                                & Teks</h3>
+                        </div>
+                        <span
+                            class="text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-3 py-1 rounded-full font-mono">Live
+                            Simulator</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="space-y-2">
+                            <label class="text-xs font-semibold text-slate-300">Ketik Angka atau Teks di sini:</label>
+                            <input type="text" id="binary-input" value="justin rinaldo" oninput="convertBinary()"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-emerald-400 font-mono text-base focus:outline-none focus:border-sky-400">
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs font-semibold text-slate-300">Hasil Kode Biner (ASCII 8-Bit):</label>
+                            <div id="binary-output"
+                                class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-emerald-400 font-mono text-sm break-all min-h-[48px] flex items-center">
+                                01101010 01100101 01110011 01110011 01101001 01100011 01100001 00100000 01100011
+                                01100001 01101110 01110100 01101001 01101011 00100000 01100010 01100001 01101110
+                                01100111 01100101 01100100 00100000 01101011 01100001 01100100 00100000 01100001
+                                01100010 01100010 01100101 01101100 01101100 01100101
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MATERI 3: KRIPTOGRAFI ==================== -->
+        <section id="section-kriptografi"
+            class="bg-slate-900/90 rounded-3xl p-6 md:p-10 border border-sky-400/30 shadow-[0_4px_30px_rgba(15,23,42,0.8)] backdrop-blur-md space-y-8">
+
+            <div class="flex items-center gap-4 border-b border-sky-500/20 pb-5">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 text-white flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(245,158,11,0.4)]">
+                    🔐
+                </div>
+                <div>
+                    <span
+                        class="px-3 py-1 rounded-full text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                        Materi 3: Keamanan Siber & Enkripsi
+                    </span>
+                    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mt-1">Kriptografi & Keamanan
+                        Informasi</h2>
+                </div>
+            </div>
+
+            <!-- Image Media Banner -->
+            <div class="relative overflow-hidden rounded-2xl border border-amber-500/30 shadow-xl group">
+                <img src="kriptografi_illustration.png" alt="Kriptografi Cyber Security Data Encryption"
+                    class="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-amber-200">
+                    <span class="bg-amber-950/80 px-3 py-1 rounded-full border border-amber-500/40 font-mono">
+                        <i class="fa-solid fa-shield-halved text-amber-400 mr-1"></i> Enkripsi Data & Cryptographic Hash Algorithm
+                    </span>
+                    <span class="text-slate-300 hidden sm:inline">Keamanan Informasi & Cyber Security</span>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm md:text-base text-slate-300 leading-relaxed">
+                <p>
+                    <strong class="text-white">Kriptografi</strong> adalah cabang ilmu matematika dan informatika yang berfokus pada teknik amankan data, komunikasi, dan transaksi digital agar tidak dapat dibaca atau dimanipulasi oleh pihak yang tidak berhak. Kata kriptografi berasal dari bahasa Yunani <em>"kryptos"</em> (tersembunyi) dan <em>"graphien"</em> (menulis). Praktik menyembunyikan pesan ini telah digunakan sejak zaman kuno, salah satunya melalui metode pergeseran abjad sederhana yang dikenal sebagai <em>Caesar Cipher</em> pada masa Romawi Kuno.
+                </p>
+
+                <p>
+                    Pada sistem keamanan modern, kriptografi dibagi menjadi dua kategori utama: Kriptografi Kunci Simetris (*Symmetric Cryptography*) dan Kriptografi Kunci Asimetris (*Asymmetric Cryptography*). Kriptografi simetris (seperti AES-256) menggunakan satu kunci rahasia yang sama untuk proses enkripsi dan dekripsi. Sementara itu, kriptografi asimetris (seperti RSA dan ECC) menggunakan sepasang kunci terpisah, yaitu Kunci Publik (*Public Key*) untuk mengunci pesan dan Kunci Privat (*Private Key*) untuk membuka pesan.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-amber-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm font-bold border border-amber-500/40">1</span>
+                        <h4 class="font-bold text-white text-base">Enkripsi</h4>
+                        <p class="text-xs text-slate-300">Mengubah teks biasa (Plaintext) menjadi pesan teracak
+                            (Ciphertext).</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-amber-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm font-bold border border-amber-500/40">2</span>
+                        <h4 class="font-bold text-white text-base">Dekripsi</h4>
+                        <p class="text-xs text-slate-300">Mengembalikan Ciphertext teracak menjadi Plaintext dengan
+                            Kunci Rahasia.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-amber-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm font-bold border border-amber-500/40">3</span>
+                        <h4 class="font-bold text-white text-base">Hashing (SHA-256)</h4>
+                        <p class="text-xs text-slate-300">Fungsi 1 arah untuk verifikasi integritas data tanpa
+                            menampilkan password asli.</p>
+                    </div>
+                </div>
+
+                <p>
+                    Selain enkripsi, komponen vital kriptografi lainnya adalah Fungsi Hash Kriptografi (*Cryptographic Hash Function*) seperti SHA-256 dan MD5. Fungsi hash mengonversi data masukan berapa pun ukurannya menjadi nilai sidik jari digital (*hash digest*) berukuran tetap yang bersifat satu arah (*one-way*). Teknologi hash digunakan secara luas untuk memverifikasi integritas unduhan file, mengamankan kata sandi pengguna di database, serta mendasari rantai blok (*blockchain*) pada teknologi keuangan terdesentralisasi.
+                </p>
+
+                <p>
+                    Di era konektivitas internet saat ini, kriptografi bertindak sebagai benteng pertahanan utama keamanan siber (*cybersecurity*). Setiap kali kita mengakses situs web berprotokol HTTPS, melakukan transaksi *internet banking*, atau mengirim pesan terenkripsi *end-to-end* di aplikasi komunikasi, algoritma kriptografi bekerja secara otomatis di balik layar untuk melindungi privasi dan identitas digital pengguna dari ancaman peretasan.
+                </p>
+
+                <!-- Kesimpulan Box -->
+                <div class="p-5 rounded-2xl bg-slate-950/80 border border-amber-500/40 space-y-2">
+                    <h4 class="font-bold text-amber-300 text-sm flex items-center gap-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-lightbulb text-amber-400"></i> Kesimpulan Materi 3: Kriptografi
+                    </h4>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed italic">
+                        Kriptografi merupakan pilar utama keamanan digital yang melindungi kerahasiaan (*confidentiality*), integritas (*integrity*), dan keabsahan (*authenticity*) data di era cyber. Algoritma enkripsi dan hashing menjamin transaksi online serta privasi informasi tetap aman dan terpercaya.
+                    </p>
+                </div>
+
+                <!-- DEMONSTRASI INTERAKTIF CAESAR CIPHER -->
+
+                <!-- DEMONSTRASI INTERAKTIF CAESAR CIPHER -->
+                <div class="p-6 md:p-8 rounded-3xl bg-slate-950/80 border border-amber-500/40 space-y-5">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <h3 class="font-bold text-amber-300 text-lg flex items-center gap-2">
+                            🔑 Simulator Enkripsi Sederhana (Caesar Cipher)
+                        </h3>
+                        <span
+                            class="text-xs bg-amber-500/20 text-amber-300 border border-amber-500/40 px-3 py-1 rounded-full font-semibold">Kriptografi
+                            Klasik</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-slate-300">Pesan Biasa (Plaintext):</label>
+                            <input type="text" id="cipher-input" value="justin rinaldo" oninput="runCaesarCipher()"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-sm font-semibold text-white focus:outline-none focus:border-amber-400">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-slate-300">Pergeseran Kunci (Shift Key):</label>
+                            <input type="number" id="cipher-shift" value="2" min="1" max="25"
+                                oninput="runCaesarCipher()"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2.5 text-sm font-semibold text-white focus:outline-none focus:border-amber-400">
+                        </div>
+
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold text-slate-300">Pesan Terenkripsi (Ciphertext):</label>
+                            <div id="cipher-output"
+                                class="w-full bg-black text-amber-400 border border-slate-800 rounded-xl px-3 py-2.5 text-sm font-mono font-bold flex items-center min-h-[42px]">
+                                lwuvkp tkpcnfq
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MATERI 4: HTML ==================== -->
+        <section id="section-html"
+            class="bg-slate-900/90 rounded-3xl p-6 md:p-10 border border-sky-400/30 shadow-[0_4px_30px_rgba(15,23,42,0.8)] backdrop-blur-md space-y-8">
+
+            <div class="flex items-center gap-4 border-b border-sky-500/20 pb-5">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-red-600 text-white flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(249,115,22,0.4)]">
+                    🏷️
+                </div>
+                <div>
+                    <span
+                        class="px-3 py-1 rounded-full text-xs font-bold bg-orange-500/20 text-orange-300 border border-orange-500/30">
+                        Materi 4: Bahasa Pemrograman Web (Struktur)
+                    </span>
+                    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mt-1">HTML (HyperText Markup
+                        Language)</h2>
+                </div>
+            </div>
+
+            <!-- Image Media Banner -->
+            <div class="relative overflow-hidden rounded-2xl border border-orange-500/30 shadow-xl group">
+                <img src="html_illustration.png" alt="HTML5 Web Development Markup"
+                    class="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-orange-200">
+                    <span class="bg-orange-950/80 px-3 py-1 rounded-full border border-orange-500/40 font-mono">
+                        <i class="fa-solid fa-code text-orange-400 mr-1"></i> HTML5 Semantic Structure & Web Markup Architecture
+                    </span>
+                    <span class="text-slate-300 hidden sm:inline">Pondasi Pemrograman Web Modern</span>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm md:text-base text-slate-300 leading-relaxed">
+                <p>
+                    <strong class="text-white">HTML (HyperText Markup Language)</strong> adalah bahasa markah standar internasional yang digunakan untuk merancang dan menyusun kerangka struktur halaman web di jaringan world wide web. Diciptakan pertama kali oleh Tim Berners-Lee pada tahun 1991, HTML memungkinkan dokumen saling terhubung satu sama lain melalui *hyperlink*, membuka era baru distribusi informasi lintas batas di seluruh dunia.
+                </p>
+
+                <p>
+                    Standar terbaru saat ini, HTML5, membawa revolusi besar dengan memperkenalkan elemen-elemen struktur semantik seperti <code class="text-orange-300 font-mono">&lt;header&gt;</code>, <code class="text-orange-300 font-mono">&lt;nav&gt;</code>, <code class="text-orange-300 font-mono">&lt;main&gt;</code>, <code class="text-orange-300 font-mono">&lt;section&gt;</code>, <code class="text-orange-300 font-mono">&lt;article&gt;</code>, dan <code class="text-orange-300 font-mono">&lt;footer&gt;</code>. Penulisan kode HTML dengan elemen semantik membuat kode lebih rapi dan mudah dirawat, sekaligus membantu mesin pencari (SEO Google) serta teknologi pembaca layar (*screen reader*) untuk memahami struktur serta isi konten secara optimal.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-6 rounded-2xl bg-slate-950/70 border border-orange-500/30 space-y-3">
+                        <h4 class="font-bold text-orange-300 text-lg flex items-center gap-2">
+                            <i class="fa-solid fa-code text-orange-400"></i> Struktur Dasar HTML5:
+                        </h4>
+                        <ul
+                            class="text-xs text-slate-300 space-y-2 font-mono bg-slate-900 p-4 rounded-xl border border-orange-500/20 leading-relaxed">
+                            <li>&lt;!DOCTYPE html&gt;</li>
+                            <li>&lt;html&gt;</li>
+                            <li class="pl-4">&lt;head&gt;&lt;title&gt;Portofolio Jessica&lt;/title&gt;&lt;/head&gt;</li>
+                            <li class="pl-4">&lt;body&gt;</li>
+                            <li class="pl-8">&lt;h1&gt;Halo World!&lt;/h1&gt;</li>
+                            <li class="pl-4">&lt;/body&gt;</li>
+                            <li>&lt;/html&gt;</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-950/70 border border-orange-500/30 space-y-3">
+                        <h4 class="font-bold text-orange-300 text-lg flex items-center gap-2">
+                            <i class="fa-solid fa-list-check text-orange-400"></i> Elemen Penting:
+                        </h4>
+                        <div class="space-y-2 text-xs text-slate-300">
+                            <div class="p-2.5 bg-slate-900 rounded-lg border border-orange-500/20">
+                                <strong class="text-orange-300 font-mono">&lt;h1&gt; - &lt;h6&gt;</strong>: Heading /
+                                Judul halaman.
+                            </div>
+                            <div class="p-2.5 bg-slate-900 rounded-lg border border-orange-500/20">
+                                <strong class="text-orange-300 font-mono">&lt;p&gt;</strong>: Paragraf teks tulisan.
+                            </div>
+                            <div class="p-2.5 bg-slate-900 rounded-lg border border-orange-500/20">
+                                <strong class="text-orange-300 font-mono">&lt;a href="..."&gt;</strong>: Hyperlink /
+                                tautan halaman.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+                    HTML5 juga mendukung integrasi multimedia bawaan (*native multimedia*) tanpa memerlukan plugin tambahan dari pihak ketiga. Tag seperti <code class="text-orange-300 font-mono">&lt;video&gt;</code>, <code class="text-orange-300 font-mono">&lt;audio&gt;</code>, dan <code class="text-orange-300 font-mono">&lt;canvas&gt;</code> memungkinkan pengembang web menyajikan konten rekaman video resolusi tinggi, pemutar musik interaktif, hingga rendering grafis 2D/3D langsung di dalam peramban web (*browser*). Selain itu, formulir HTML5 dilengkapi dengan validasi tipe input otomatis yang meningkatkan pengalaman pengguna (*user experience*).
+                </p>
+
+                <p>
+                    Sebagai pondasi dasar pengembangan web (*web development*), pemahaman HTML sangat penting bagi siapa saja yang ingin mendalami dunia teknologi informasi. HTML bekerja secara sinergis dengan CSS (yang mengatur tampilan estetika) dan JavaScript (yang mengatur perilaku interaktif dinamis), membentuk tiga pilar utama (*holy trinity*) pengembangan antarmuka web modern.
+                </p>
+
+                <!-- Kesimpulan Box -->
+                <div class="p-5 rounded-2xl bg-slate-950/80 border border-orange-500/40 space-y-2">
+                    <h4 class="font-bold text-orange-300 text-sm flex items-center gap-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-lightbulb text-orange-400"></i> Kesimpulan Materi 4: HTML
+                    </h4>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed italic">
+                        HTML adalah fondasi kerangka web universal yang menyusun struktur konten dan informasi di internet. Penguasaan elemen semantik HTML5 memungkinkan pembuatan aplikasi web yang terstruktur rapi, aksesibel, dan ramah terhadap mesin pencari (SEO).
+                    </p>
+                </div>
+
+                <!-- DEMONSTRASI INTERAKTIF 4: LIVE HTML EDITOR SANDBOX -->
+                <div class="bg-slate-950/90 border border-orange-500/40 p-6 md:p-8 rounded-3xl space-y-5">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <h3 class="font-bold text-orange-300 text-lg flex items-center gap-2">
+                            🖥️ Demonstrasi Interaktif 4: Live HTML Code Playground & Render Preview
+                        </h3>
+                        <span
+                            class="text-xs bg-orange-500/20 text-orange-300 border border-orange-500/40 px-3 py-1 rounded-full font-mono">Live
+                            Sandbox</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <div class="space-y-2">
+                            <label class="text-xs font-semibold text-slate-300 flex items-center justify-between">
+                                <span>Ketik Kode HTML di sini:</span>
+                                <span class="text-orange-400 font-mono">Editor Kode</span>
+                            </label>
+                            <textarea id="html-code-input" rows="7" oninput="updateHtmlPreview()"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-xl p-4 text-orange-300 font-mono text-xs md:text-sm focus:outline-none focus:border-orange-400 leading-relaxed"><h2 style="color:#38bdf8; margin-bottom:8px;">haii pak yahyaa</h2>
+<p style="color:#cbd5e1; font-size:14px;">kasi nilai bagus ya pakk.</p>
+<button style="margin-top:10px; background:#0284c7; color:#fff; padding:8px 16px; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">Tombol Tes HTML</button></textarea>
+                        </div>
+
+                        <div class="space-y-2">
+                            <label class="text-xs font-semibold text-slate-300 flex items-center justify-between">
+                                <span>Hasil Tampilan Render Browser (Live Preview):</span>
+                                <span class="text-emerald-400 font-mono">Output Live</span>
+                            </label>
+                            <div id="html-render-preview"
+                                class="w-full bg-slate-900 border border-slate-700 rounded-xl p-5 min-h-[175px] text-slate-100 flex flex-col justify-center shadow-inner">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MATERI 5: CSS ==================== -->
+        <section id="section-css"
+            class="bg-slate-900/90 rounded-3xl p-6 md:p-10 border border-sky-400/30 shadow-[0_4px_30px_rgba(15,23,42,0.8)] backdrop-blur-md space-y-8">
+
+            <div class="flex items-center gap-4 border-b border-sky-500/20 pb-5">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 text-white flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(59,130,246,0.4)]">
+                    🎨
+                </div>
+                <div>
+                    <span
+                        class="px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                        Materi 5: Desain Web & Pengaturan Gaya
+                    </span>
+                    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mt-1">CSS (Cascading Style
+                        Sheets)</h2>
+                </div>
+            </div>
+
+            <!-- Image Media Banner -->
+            <div class="relative overflow-hidden rounded-2xl border border-blue-500/30 shadow-xl group">
+                <img src="css_illustration.png" alt="CSS Creative Web Design UI"
+                    class="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-blue-200">
+                    <span class="bg-blue-950/80 px-3 py-1 rounded-full border border-blue-500/40 font-mono">
+                        <i class="fa-solid fa-palette text-blue-400 mr-1"></i> Flexbox, CSS Grid & Tailwind UI Design Studio
+                    </span>
+                    <span class="text-slate-300 hidden sm:inline">Desain Visual & Layout Responsif</span>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm md:text-base text-slate-300 leading-relaxed">
+                <p>
+                    <strong class="text-white">CSS (Cascading Style Sheets)</strong> adalah bahasa lembar gaya yang digunakan untuk mengatur tata letak, warna, tipografi, serta tampilan visual dari dokumen yang ditulis dalam bahasa markah seperti HTML. Pemisahan antara struktur isi dokumen (HTML) dan desain presentasi visual (CSS) merupakan prinsip utama desain web modern yang memungkinkan fleksibilitas tinggi dan efisiensi pemeliharaan situs web.
+                </p>
+
+                <p>
+                    Perkembangan spesifikasi CSS3 memperkenalkan sistem tata letak canggih yang mempermudah perancangan antarmuka responsif (*responsive web design*). Fitur *Flexbox* (Flexible Box Layout) sangat efisien dalam mengatur susunan elemen satu dimensi, sedangkan *CSS Grid Layout* memungkinkan pengaturan tata letak dua dimensi yang kompleks dengan baris dan kolom. Dengan bantuan *Media Queries*, tampilan halaman web dapat menyesuaikan ukurannya secara otomatis di berbagai layar perangkat, mulai dari smartphone, tablet, hingga monitor komputer desktop.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-blue-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm font-bold border border-blue-500/40">1</span>
+                        <h4 class="font-bold text-white text-base">Warna & Gradien</h4>
+                        <p class="text-xs text-slate-300">Styling background, teks, dan gradien warna estetika.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-blue-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm font-bold border border-blue-500/40">2</span>
+                        <h4 class="font-bold text-white text-base">Layout Flexbox & Grid</h4>
+                        <p class="text-xs text-slate-300">Menyusun elemen halaman web agar responsif di HP & PC.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-blue-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center text-sm font-bold border border-blue-500/40">3</span>
+                        <h4 class="font-bold text-white text-base">Tailwind CSS</h4>
+                        <p class="text-xs text-slate-300">Framework utilitas cepat untuk desain responsif modern.</p>
+                    </div>
+                </div>
+
+                <p>
+                    CSS modern juga dilengkapi dengan kapabilitas animasi halus (*CSS Transitions & Keyframe Animations*), variabel kustom (*CSS Custom Properties*), serta efek visual kontemporer seperti *Glassmorphism* (efek kaca buram), *Neumorphism*, serta *Dark Mode* otomatis. Penggunaan filter grafis dan efek gradien dinamis memungkinkan perancang web menciptakan pengalaman pengguna (*User Interface / UI*) yang atraktif, interaktif, dan terkesan sangat profesional.
+                </p>
+
+                <p>
+                    Dalam alur kerja industri profesional modern, pengembang web kerap memanfaatkan *Utility-First CSS Framework* seperti Tailwind CSS. Framework ini menyediakan ribuan kelas utilitas siap pakai yang mempercepat proses pembuatan desain web tanpa perlu menulis sintaksis CSS mentah secara berulang. Pendekatan ini memastikan konsistensi sistem desain (*design system*) sekaligus menjaga performa halaman web tetap cepat dan ringan saat diakses.
+                </p>
+
+                <!-- Kesimpulan Box -->
+                <div class="p-5 rounded-2xl bg-slate-950/80 border border-blue-500/40 space-y-2">
+                    <h4 class="font-bold text-blue-300 text-sm flex items-center gap-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-lightbulb text-blue-400"></i> Kesimpulan Materi 5: CSS
+                    </h4>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed italic">
+                        CSS adalah jiwa artistik dunia web yang mengubah kerangka polos HTML menjadi antarmuka visual yang memukau, responsif, dan dinamis. Penguasaan Flexbox, Grid, dan Tailwind CSS mempercepat perancangan situs web berstandar profesional.
+                    </p>
+                </div>
+
+                <!-- DEMONSTRASI INTERAKTIF 5: LIVE CSS STYLE DESIGNER -->
+
+                <!-- DEMONSTRASI INTERAKTIF 5: LIVE CSS STYLE DESIGNER -->
+                <div class="p-6 md:p-8 rounded-3xl bg-slate-950/90 border border-blue-500/40 space-y-5">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <h3 class="font-bold text-blue-300 text-lg flex items-center gap-2">
+                            🎛️ Demonstrasi Interaktif 5: Live CSS Style Designer & Visual Tuning
+                        </h3>
+                        <span
+                            class="text-xs bg-blue-500/20 text-blue-300 border border-blue-500/40 px-3 py-1 rounded-full font-mono">Live
+                            CSS Studio</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <div class="space-y-4 bg-slate-900 p-5 rounded-2xl border border-slate-800">
+                            <div>
+                                <label class="text-xs font-semibold text-slate-300 flex justify-between">
+                                    <span>Pilih Warna Latar:</span>
+                                    <span id="label-css-bg" class="text-sky-400 font-mono">Sky Blue</span>
+                                </label>
+                                <select id="css-bg-select" onchange="updateCssPreview()"
+                                    class="w-full mt-1 bg-slate-800 border border-slate-700 text-xs text-white rounded-lg p-2 focus:outline-none focus:border-blue-400">
+                                    <option value="bg-gradient-to-r from-sky-500 to-blue-600">Sky Blue Gradient</option>
+                                    <option value="bg-gradient-to-r from-emerald-500 to-teal-600">Emerald Green Gradient
+                                    </option>
+                                    <option value="bg-gradient-to-r from-purple-500 to-indigo-600">Purple Indigo
+                                        Gradient</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="text-xs font-semibold text-slate-300 flex justify-between">
+                                    <span>Radius Sudut: <span id="label-css-radius"
+                                            class="text-sky-400 font-mono">16px</span></span>
+                                </label>
+                                <input type="range" id="css-radius-range" min="0" max="32" value="16"
+                                    oninput="updateCssPreview()" class="w-full mt-1 accent-sky-400 cursor-pointer">
+                            </div>
+
+                            <div>
+                                <label class="text-xs font-semibold text-slate-300 flex justify-between">
+                                    <span>Ukuran Teks: <span id="label-css-font"
+                                            class="text-sky-400 font-mono">18px</span></span>
+                                </label>
+                                <input type="range" id="css-font-range" min="14" max="28" value="18"
+                                    oninput="updateCssPreview()" class="w-full mt-1 accent-sky-400 cursor-pointer">
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex items-center justify-center p-4 bg-slate-900 rounded-2xl border border-slate-800 min-h-[180px]">
+                            <div id="css-demo-card"
+                                class="bg-gradient-to-r from-sky-500 to-blue-600 text-white p-6 shadow-xl text-center transition-all duration-300 w-full max-w-sm">
+                                <h4 id="css-demo-text" class="font-extrabold tracking-tight" style="font-size: 18px;">
+                                    Desain Kartu CSS Jessica ✨
+                                </h4>
+                                <p class="text-xs mt-1 text-white/90">
+                                    Ubah opsi slider di samping untuk menguji efek CSS secara real-time!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MATERI 6: ANTIGRAVITY ==================== -->
+        <section id="section-antigravity"
+            class="bg-slate-900/90 rounded-3xl p-6 md:p-10 border border-purple-400/40 shadow-[0_4px_30px_rgba(15,23,42,0.8)] backdrop-blur-md space-y-8">
+
+            <div class="flex items-center gap-4 border-b border-purple-500/20 pb-5">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 via-indigo-600 to-sky-400 text-white flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(192,132,252,0.5)]">
+                    🚀
+                </div>
+                <div>
+                    <span
+                        class="px-3 py-1 rounded-full text-xs font-bold bg-purple-500/20 text-purple-300 border border-purple-500/40">
+                        Materi 6: Advanced Agentic AI & Fisika Kuantum
+                    </span>
+                    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mt-1">Antigravity (Teknologi
+                        & Agen AI)</h2>
+                </div>
+            </div>
+
+            <!-- Image Media Banner -->
+            <div class="relative overflow-hidden rounded-2xl border border-purple-500/40 shadow-xl group">
+                <img src="antigravity_illustration.png" alt="Antigravity Quantum Levitation AI Agent"
+                    class="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition-all duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-purple-200">
+                    <span class="bg-purple-950/80 px-3 py-1 rounded-full border border-purple-500/40 font-mono">
+                        <i class="fa-solid fa-atom text-purple-400 mr-1"></i> Quantum Levitation Superconductor & Autonomous Agentic AI
+                    </span>
+                    <span class="text-slate-300 hidden sm:inline">Komputasi Masa Depan Tanpa Gesekan</span>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm md:text-base text-slate-300 leading-relaxed">
+                <p>
+                    <strong class="text-white">Antigravity</strong> (Antigravitasi) dalam ranah sains komputasi dan kecerdasan buatan (*Artificial Intelligence*) merepresentasikan dua terobosan teknologi masa depan yang saling melengkapi: prinsip fisika levitasi kuantum medan magnetik serta sistem agen AI otonom generasi terbaru (*Advanced Agentic Coding Agent*). Konsep ini menginspirasi cara baru dalam memecahkan hambatan fisik maupun kompleksitas perangkat lunak secara cerdas.
+                </p>
+
+                <p>
+                    Pada domain fisika kuantum dan ilmu bahan, antigravitasi diwujudkan melalui fenomena efek Meissner pada bahan superkonduktor suhu tinggi. Ketika superkonduktor didinginkan hingga suhu kritis, bahan tersebut akan menolak seluruh medan magnet luar, memungkinkan objek melayang secara stabil tanpa gesekan mekanis (*Quantum Levitation*). Teknologi ini menjadi dasar pengembangan transportasi super cepat seperti kereta Maglev (*Magnetic Levitation*) serta penahan ruang vakum pada reaktor fusi nuklir.
+                </p>
+
+                <!-- Concept Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-purple-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center text-sm font-bold border border-purple-500/40">1</span>
+                        <h4 class="font-bold text-white text-base">Levitasi Kuantum</h4>
+                        <p class="text-xs text-slate-300">Penggunaan bahan superkonduktor untuk melawan gaya gravitasi
+                            bumi ($F_{net} = F_m - m \cdot g$).</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-purple-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center text-sm font-bold border border-purple-500/40">2</span>
+                        <h4 class="font-bold text-white text-base">Agentic AI Coding</h4>
+                        <p class="text-xs text-slate-300">Teknologi kecerdasan buatan otonom dari Google DeepMind yang
+                            mampu merancang & mengeksekusi aplikasi web.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-purple-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center text-sm font-bold border border-purple-500/40">3</span>
+                        <h4 class="font-bold text-white text-base">Komputasi Masa Depan</h4>
+                        <p class="text-xs text-slate-300">Integrasi kecerdasan buatan pintar dengan simulasi fisika
+                            antariksa tanpa gesekan.</p>
+                    </div>
+                </div>
+
+                <p>
+                    Sementara itu, dalam dunia informatika dan rekayasa perangkat lunak, Antigravity merujuk pada platform agen AI otonom tingkat lanjut (seperti yang dikembangkan oleh tim Google DeepMind). Agen AI ini tidak hanya sekadar memberikan jawaban teks, melainkan memiliki kemampuan *agentic reasoning* untuk merencanakan alur kerja (*planning*), menjelajahi repositori kode, mendiagnosis bug runtime, mengeksekusi perintah terminal, dan membangun aplikasi web secara mandiri dari awal hingga selesai.
+                </p>
+
+                <p>
+                    Integrasi antara sains komputasi kuantum dan kecerdasan agen AI otonom menandai era baru dalam inovasi teknologi global. Dengan meminimalkan gesekan komputasi dan mempercepat proses riset perangkat lunak, Antigravity memungkinkan para ilmuwan, insinyur, dan pelajar untuk mengeksplorasi ide-ide kompleks secara lebih cepat, responsif, dan tanpa batas (*limitless innovation*).
+                </p>
+
+                <!-- Kesimpulan Box -->
+                <div class="p-5 rounded-2xl bg-slate-950/80 border border-purple-500/40 space-y-2">
+                    <h4 class="font-bold text-purple-300 text-sm flex items-center gap-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-lightbulb text-purple-400"></i> Kesimpulan Materi 6: Antigravity
+                    </h4>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed italic">
+                        Antigravity menyatukan keajaiban levitasi kuantum fisika dan keunggulan Agen AI Otonom generasi baru. Teknologi ini membebaskan proses rekayasa dari batas-batas konvensional, membuka jalan bagi era komputasi masa depan yang serba cepat dan intuitif.
+                    </p>
+                </div>
+
+                <!-- DEMONSTRASI INTERAKTIF 6: LIVE ANTIGRAVITY FIELD & LEVITATION SIMULATOR -->
+                <div class="p-6 md:p-8 rounded-3xl bg-slate-950/90 border border-purple-500/40 space-y-6">
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                        <h3 class="font-bold text-purple-300 text-lg flex items-center gap-2">
+                            🌌 Demonstrasi Interaktif 6: Live Antigravity Field & Levitating Simulator
+                        </h3>
+                        <span
+                            class="text-xs bg-purple-500/20 text-purple-300 border border-purple-500/40 px-3 py-1 rounded-full font-mono">Live
+                            Quantum Physics</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                        <!-- Controls Panel -->
+                        <div class="space-y-4 bg-slate-900 p-5 rounded-2xl border border-slate-800">
+                            <div class="flex items-center justify-between">
+                                <label class="text-xs font-bold text-slate-300">Status Daya Medan Antigravitasi:</label>
+                                <button id="antigravity-power-btn" onclick="toggleAntigravityPower()"
+                                    class="px-4 py-1.5 rounded-xl font-bold text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30 transition-all">
+                                    🟢 POWER ON
+                                </button>
+                            </div>
+
+                            <div>
+                                <label class="text-xs font-semibold text-slate-300 flex justify-between">
+                                    <span>Kekuatan Medan Magnetik (Levitation Lift): <span id="label-anti-power"
+                                            class="text-purple-400 font-mono">75%</span></span>
+                                </label>
+                                <input type="range" id="anti-power-range" min="0" max="100" value="75"
+                                    oninput="updateAntigravitySimulator()"
+                                    class="w-full mt-1 accent-purple-400 cursor-pointer">
+                            </div>
+
+                            <div>
+                                <label class="text-xs font-semibold text-slate-300 flex justify-between">
+                                    <span>Massa Objek (Payload Mass): <span id="label-anti-mass"
+                                            class="text-purple-400 font-mono">1.5 kg</span></span>
+                                </label>
+                                <input type="range" id="anti-mass-range" min="0.5" max="5.0" step="0.5" value="1.5"
+                                    oninput="updateAntigravitySimulator()"
+                                    class="w-full mt-1 accent-purple-400 cursor-pointer">
+                            </div>
+
+                            <div
+                                class="p-3 bg-slate-950 rounded-xl border border-purple-500/30 font-mono text-xs space-y-1">
+                                <div class="text-slate-400">Status Medan: <span id="anti-status-text"
+                                        class="text-emerald-400 font-bold">TERAPUNG STABIL (LEVITATING)</span></div>
+                                <div class="text-slate-400">Gaya Bersih ($F_{net}$): <span id="anti-force-text"
+                                        class="text-purple-300 font-bold">+12.4 N (LIFT UP)</span></div>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Levitating Orb Simulation Visualizer -->
+                        <div
+                            class="flex flex-col items-center justify-center p-6 bg-slate-900/90 rounded-2xl border border-slate-800 min-h-[240px] relative overflow-hidden">
+                            <!-- Background Grid Lines -->
+                            <div
+                                class="absolute inset-0 opacity-10 bg-[radial-gradient(#c084fc_1px,transparent_1px)] [background-size:16px_16px]">
+                            </div>
+
+                            <!-- Levitating Orb -->
+                            <div id="antigravity-orb"
+                                class="w-20 h-20 rounded-full bg-gradient-to-tr from-sky-400 via-purple-500 to-indigo-400 antigravity-levitate flex items-center justify-center text-3xl shadow-[0_0_35px_rgba(192,132,252,0.8)] z-10 transition-all duration-500">
+                                🚀
+                            </div>
+
+                            <!-- Magnet Ring Base -->
+                            <div
+                                class="w-36 h-4 rounded-full bg-gradient-to-r from-purple-600 via-sky-400 to-indigo-600 border border-purple-300 shadow-[0_0_25px_rgba(192,132,252,0.6)] mt-8 z-10">
+                            </div>
+                            <span class="text-[10px] text-purple-300 font-mono mt-1 z-10">SUPERCONDUCTOR MAGNET
+                                BASE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== MATERI 7: VIBE CODING ==================== -->
+        <section id="section-vibe-coding"
+            class="bg-slate-900/90 rounded-3xl p-6 md:p-10 border border-pink-400/40 shadow-[0_4px_30px_rgba(15,23,42,0.8)] backdrop-blur-md space-y-8">
+
+            <div class="flex items-center gap-4 border-b border-pink-500/20 pb-5">
+                <div
+                    class="w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-500 via-rose-500 to-purple-600 text-white flex items-center justify-center text-2xl font-bold shadow-[0_0_20px_rgba(244,114,182,0.5)]">
+                    🎧
+                </div>
+                <div>
+                    <span
+                        class="px-3 py-1 rounded-full text-xs font-bold bg-pink-500/20 text-pink-300 border border-pink-500/40">
+                        Materi 7: Paradigma Pemrograman Generasi AI
+                    </span>
+                    <h2 class="font-display text-2xl md:text-3xl font-extrabold text-white mt-1">Vibe Coding (Pengembangan Perangkat Lunak Berbasis AI)</h2>
+                </div>
+            </div>
+
+            <!-- Video & Visual Media Banner Container -->
+            <div class="relative overflow-hidden rounded-2xl border border-pink-500/40 shadow-2xl bg-slate-950/90 group">
+                <div class="relative aspect-video w-full overflow-hidden bg-slate-950 flex items-center justify-center">
+                    <video class="w-full h-full object-cover" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80">
+                        <source src="https://assets.mixkit.co/videos/preview/mixkit-software-developer-working-on-code-41551-large.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutar video HTML5.
+                    </video>
+                    <!-- Glowing gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-transparent to-transparent opacity-70"></div>
+                </div>
+
+                <div class="p-4 bg-slate-900/90 border-t border-pink-500/30 text-xs text-slate-300 flex items-center justify-between flex-wrap gap-2">
+                    <span class="flex items-center gap-1.5 font-semibold text-pink-300">
+                        <i class="fa-solid fa-wand-magic-sparkles text-pink-400"></i> Video Demonstrasi Alur Kerja Vibe Coding & Asisten AI
+                    </span>
+                    <span class="text-slate-400 font-mono bg-pink-950/60 px-3 py-0.5 rounded-full border border-pink-500/30">
+                        <i class="fa-solid fa-circle-play text-rose-400 mr-1"></i> Live Motion Showcase
+                    </span>
+                </div>
+            </div>
+
+            <div class="space-y-6 text-sm md:text-base text-slate-300 leading-relaxed">
+                <!-- Paragraf 1 -->
+                <p>
+                    <strong class="text-white">Vibe Coding</strong> adalah istilah dan paradigma baru dalam dunia rekayasa perangkat lunak yang diperkenalkan di era pesatnya perkembangan model bahasa besar (*Large Language Models / LLM*) dan asisten kecerdasan buatan (*AI Coding Assistants*). Dalam pendekatan ini, alur kerja seorang pemrogram bergeser dari penulisan sintaksis kode manual baris demi baris menjadi proses mengarahkan ide, arsitektur, serta logika bisnis secara intuitif melalui bahasa alami (*natural language prompts*). Pemrogram berfokus pada "vibe", visi produk, dan pengalaman pengguna, sementara eksekusi sintaksis teknis ditangani secara cepat oleh sistem AI.
+                </p>
+
+                <!-- Paragraf 2 -->
+                <p>
+                    Paradigma Vibe Coding mengubah pola interaksi manusia dan komputer dari mode komando kaku menjadi hubungan kolaborasi interaktif (*Human-AI Pair Programming*). Seorang insinyur perangkat lunak kini bertindak layaknya seorang sutradara atau arsitek utama yang merancang alur cerita aplikasi, mengevaluasi luaran (*output*) kode yang dihasilkan AI, serta melakukan penyempurnaan desain. Pendekatan ini secara drastis mengurangi beban mental (*cognitive load*) dalam menghafal dokumentasi API yang rumit atau mengatasi sintaksis error yang bersifat sepele.
+                </p>
+
+                <!-- Feature Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-pink-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-300 flex items-center justify-center text-sm font-bold border border-pink-500/40">1</span>
+                        <h4 class="font-bold text-white text-base">Prompting Intuitive</h4>
+                        <p class="text-xs text-slate-300">Menerjemahkan ide abstrak menjadi aplikasi fungsional melalui dialog bahasa alami.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-pink-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-300 flex items-center justify-center text-sm font-bold border border-pink-500/40">2</span>
+                        <h4 class="font-bold text-white text-base">Rapid Prototyping</h4>
+                        <p class="text-xs text-slate-300">Memangkas waktu pembuatan prototipe dari hitungan minggu menjadi hitungan menit.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-slate-950/70 border border-pink-500/30 space-y-2">
+                        <span
+                            class="w-8 h-8 rounded-lg bg-pink-500/20 text-pink-300 flex items-center justify-center text-sm font-bold border border-pink-500/40">3</span>
+                        <h4 class="font-bold text-white text-base">Human-in-the-Loop</h4>
+                        <p class="text-xs text-slate-300">Kontrol etika dan validasi logika tetap di bawah pengawasan penuh pemrogram.</p>
+                    </div>
+                </div>
+
+                <!-- Paragraf 3 -->
+                <p>
+                    Keunggulan utama dari Vibe Coding terletak pada efisiensi waktu dan kecepatan pembuatan purwatingkat (*rapid prototyping*). Ide yang sebelumnya membutuhkan waktu berminggu-minggu untuk dikodekan dari awal kini dapat diwujudkan menjadi aplikasi web fungsional dalam hitungan jam. Hal ini membuka aksesibilitas yang jauh lebih luas bagi pemula, desainer antarmuka, dan inovator non-teknis untuk mengekspresikan kreativitas digital mereka tanpa terhalang tembok tinggi kompleksitas bahasa pemrograman teknis.
+                </p>
+
+                <!-- Paragraf 4 -->
+                <p>
+                    Kendati memberikan kemudahan dan efisiensi luar biasa, penerapan Vibe Coding yang bertanggung jawab tetap menuntut pemahaman fundamental informatika yang kuat. Seorang pemrogram harus tetap menguasai logika biner, arsitektur data, keamanan siber, dan pengujian sistem untuk memverifikasi bahwa kode yang dihasilkan AI berkualitas tinggi, aman dari celah keamanan, dan efisien dalam penggunaan sumber daya. Pengawasan manusia (*Human-in-the-Loop*) tetap menjadi kunci utama dalam memastikan hasil Vibe Coding selaras dengan etika dan standar profesionalisme digital.
+                </p>
+
+                <!-- Kesimpulan Box -->
+                <div class="p-5 rounded-2xl bg-slate-950/80 border border-pink-500/40 space-y-2">
+                    <h4 class="font-bold text-pink-300 text-sm flex items-center gap-2 uppercase tracking-wider">
+                        <i class="fa-solid fa-lightbulb text-pink-400"></i> Kesimpulan Materi 7: Vibe Coding
+                    </h4>
+                    <p class="text-xs md:text-sm text-slate-300 leading-relaxed italic">
+                        Vibe Coding adalah wujud masa depan pembuatan aplikasi yang menyatukan imajinasi manusia dan kecepatan komputasi AI. Dengan menyerahkan tugas penulisan sintaksis rutin kepada AI, pemrogram dapat mencurahkan fokus penuh pada kreativitas, logika solusi, dan nilai kemanusiaan produk yang dibuat.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#0f172a] border-t border-sky-400/30 py-8 text-center text-xs text-slate-400 relative z-10">
+        <div class="max-w-7xl mx-auto px-4 space-y-3">
+            <p class="font-semibold text-slate-200">
+                Portofolio Digital Informatika — Jessica
+            </p>
+            <p>Sekolah Cinta Kasih Tzu Chi © 2026. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic -->
+    <script>
+        // Google Search Helper
+        function setSearchQuery(query) {
+            const input = document.getElementById('google-search-input');
+            input.value = query;
+            input.focus();
+        }
+
+        // 1. Live Binary Conversion Simulator
+        function convertBinary() {
+            const input = document.getElementById('binary-input').value;
+            const output = document.getElementById('binary-output');
+
+            if (!input) {
+                output.innerText = '00000000';
+                return;
+            }
+
+            let result = '';
+            for (let i = 0; i < input.length; i++) {
+                const biner = input[i].charCodeAt(0).toString(2).padStart(8, '0');
+                result += biner + ' ';
+            }
+
+            output.innerText = result.trim();
+        }
+
+        // 2. Caesar Cipher Simulator
+        function runCaesarCipher() {
+            const str = document.getElementById('cipher-input').value;
+            let shift = parseInt(document.getElementById('cipher-shift').value) || 0;
+            const output = document.getElementById('cipher-output');
+
+            shift = (shift % 26 + 26) % 26;
+
+            let res = '';
+            for (let i = 0; i < str.length; i++) {
+                let char = str[i];
+                if (char.match(/[a-z]/i)) {
+                    const code = str.charCodeAt(i);
+                    if (code >= 65 && code <= 90) {
+                        char = String.fromCharCode(((code - 65 + shift) % 26) + 65);
+                    } else if (code >= 97 && code <= 122) {
+                        char = String.fromCharCode(((code - 97 + shift) % 26) + 97);
+                    }
+                }
+                res += char;
+            }
+
+            output.innerText = res;
+        }
+
+        // 3. HTML Live Sandbox Preview
+        function updateHtmlPreview() {
+            const code = document.getElementById('html-code-input').value;
+            const preview = document.getElementById('html-render-preview');
+            preview.innerHTML = code;
+        }
+
+        // 4. CSS Live Designer Preview
+        function updateCssPreview() {
+            const bgClass = document.getElementById('css-bg-select').value;
+            const radius = document.getElementById('css-radius-range').value;
+            const fontSize = document.getElementById('css-font-range').value;
+
+            document.getElementById('label-css-radius').innerText = radius + 'px';
+            document.getElementById('label-css-font').innerText = fontSize + 'px';
+
+            const card = document.getElementById('css-demo-card');
+            card.className = `${bgClass} text-white p-6 shadow-xl text-center transition-all duration-300 w-full max-w-sm`;
+            card.style.borderRadius = radius + 'px';
+
+            const text = document.getElementById('css-demo-text');
+            text.style.fontSize = fontSize + 'px';
+        }
+
+        // 5. Antigravity Live Levitation Simulator
+        let isAntigravityOn = true;
+        function toggleAntigravityPower() {
+            isAntigravityOn = !isAntigravityOn;
+            const btn = document.getElementById('antigravity-power-btn');
+            if (isAntigravityOn) {
+                btn.className = 'px-4 py-1.5 rounded-xl font-bold text-xs bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 hover:bg-emerald-500/30 transition-all';
+                btn.innerText = '🟢 POWER ON';
+            } else {
+                btn.className = 'px-4 py-1.5 rounded-xl font-bold text-xs bg-rose-500/20 text-rose-300 border border-rose-500/40 hover:bg-rose-500/30 transition-all';
+                btn.innerText = '🔴 POWER OFF';
+            }
+            updateAntigravitySimulator();
+        }
+
+        function updateAntigravitySimulator() {
+            const power = parseInt(document.getElementById('anti-power-range').value);
+            const mass = parseFloat(document.getElementById('anti-mass-range').value);
+
+            document.getElementById('label-anti-power').innerText = power + '%';
+            document.getElementById('label-anti-mass').innerText = mass + ' kg';
+
+            const orb = document.getElementById('antigravity-orb');
+            const statusText = document.getElementById('anti-status-text');
+            const forceText = document.getElementById('anti-force-text');
+
+            if (!isAntigravityOn) {
+                orb.classList.remove('antigravity-levitate');
+                orb.style.transform = 'translateY(40px) scale(0.9)';
+                orb.style.boxShadow = 'none';
+                statusText.className = 'text-rose-400 font-bold';
+                statusText.innerText = 'POWER MATI (JARAT JATUH GRAVITASI)';
+                forceText.className = 'text-rose-300 font-bold';
+                forceText.innerText = `-${(mass * 9.8).toFixed(1)} N (GRAVITASI BUMI)`;
+                return;
+            }
+
+            const liftForce = (power / 100) * 50;
+            const gravityForce = mass * 9.8;
+            const netForce = liftForce - gravityForce;
+
+            if (netForce > 0) {
+                orb.classList.add('antigravity-levitate');
+                statusText.className = 'text-emerald-400 font-bold';
+                statusText.innerText = 'TERAPUNG STABIL (LEVITATING)';
+                forceText.className = 'text-emerald-300 font-bold';
+                forceText.innerText = `+${netForce.toFixed(1)} N (GAYA ANGKAT MEDAN)`;
+            } else if (Math.abs(netForce) < 2) {
+                orb.classList.remove('antigravity-levitate');
+                orb.style.transform = 'translateY(10px) scale(1)';
+                statusText.className = 'text-amber-400 font-bold';
+                statusText.innerText = 'MELAYANG SEIMBANG (HOVER)';
+                forceText.className = 'text-amber-300 font-bold';
+                forceText.innerText = `0.0 N (NETRAL)`;
+            } else {
+                orb.classList.remove('antigravity-levitate');
+                orb.style.transform = 'translateY(35px) scale(0.95)';
+                statusText.className = 'text-rose-400 font-bold';
+                statusText.innerText = 'OVERLOAD (BEBAN TERLALU BERAT)';
+                forceText.className = 'text-rose-300 font-bold';
+                forceText.innerText = `${netForce.toFixed(1)} N (TERTARIK DOWN)`;
+            }
+        }
+
+        // Run initializations on DOM load
+        document.addEventListener('DOMContentLoaded', () => {
+            convertBinary();
+            runCaesarCipher();
+            updateHtmlPreview();
+            updateCssPreview();
+            updateAntigravitySimulator();
+        });
+    </script>
+</body>
+
+</html>
